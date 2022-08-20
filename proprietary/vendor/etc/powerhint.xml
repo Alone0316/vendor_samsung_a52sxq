@@ -1,0 +1,773 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<!--
+/* Copyright (c) 2019, The Linux Foundation. All rights reserved.
+ *
+ * Redistribution and use in source and binary forms, with or without
+ * modification, are permitted provided that the following conditions are
+ * met:
+ *     * Redistributions of source code must retain the above copyright
+ *       notice, this list of conditions and the following disclaimer.
+ *     * Redistributions in binary form must reproduce the above
+ *       copyright notice, this list of conditions and the following
+ *       disclaimer in the documentation and/or other materials provided
+ *       with the distribution.
+ *     * Neither the name of The Linux Foundation nor the names of its
+ *       contributors may be used to endorse or promote products derived
+ *       from this software without specific prior written permission.
+ *
+ * THIS SOFTWARE IS PROVIDED "AS IS" AND ANY EXPRESS OR IMPLIED
+ * WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF
+ * MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT
+ * ARE DISCLAIMED.  IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS
+ * BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
+ * CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
+ * SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR
+ * BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY,
+ * WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
+ * OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN
+ * IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+ * Tuned for Product a52sxq
+ */
+-->
+<HintConfigs>
+    <Powerhint>
+
+        <!-- POWER_HINT_ID_COMMON -->
+        <!-- CPU-LLCC BWMON, sample_ms   : MPCTLV3_CPU_LLCC_BW_SAMPLE_MS(0x4183C000)                 : 0x14 -->
+        <!-- LLCC-DDR BWMON, sample_ms   : MPCTLV3_LLCC_DDR_BW_SAMPLE_MS(0x43034000)                 : 0x14 -->
+        <Config
+            Id="0x00001331" Enable="true" Timeout="0" Target="yupik"
+            Resources="0x4183C000, 0x14, 0x43034000, 0x14"/>
+
+        <!-- POWER_HINT_ID_VIDEO_ENCODE_FHD_30FPS -->
+        <!-- CPU CORE 0 SCHED LOAD BOOST : 0x40C68100 : 0xFFFFFFFA -->
+        <!-- CPU CORE 1 SCHED LOAD BOOST : 0x40C68110 : 0xFFFFFFFA -->
+        <!-- CPU CORE 2 SCHED LOAD BOOST : 0x40C68120 : 0xFFFFFFFA -->
+        <!-- CPU CORE 3 SCHED LOAD BOOST : 0x40C68130 : 0xFFFFFFFA -->
+        <!-- CPU Hispeed freq            : MPCTLV3_SCHEDUTIL_HISPEED_FREQ_CLUSTER_LITTLE(0x4143C100) : 1324 -->
+        <!-- CPU Hispeed load            : MPCTLV3_SCHEDUTIL_HISPEED_LOAD_CLUSTER_LITTLE(0x41440100) : 0x5F -->
+        <!-- Sched group downmigrate     : MPCTLV3_SCHED_GROUP_DOWNMIGRATE(0x40C58000)               : 30   -->
+        <!-- Sched group Upmigrate       : MPCTLV3_SCHED_GROUP_UPMIGRATE(0x40C54000)                 : 35   -->
+        <!-- Sched downmigrate           : MPCTLV3_SCHED_DOWNMIGRATE(0x40C20000)                     : 30   -->
+        <!-- Sched Upmigrate             : MPCTLV3_SCHED_UPMIGRATE(0x40C1C000)                       : 35   -->
+        <!-- Sched prefer spread         : MPCTLV3_SCHED_PREFER_SPREAD(0x40CA8000)                   : 2    -->
+        <!-- uclamp latency sensitivity  : MPCTLV3_CPUCTL_FG_UCLAMP_LATENCY_SENSITIVE(0x40CEC000)    : 0x1  -->
+        <!-- silver cluster min freq     : MPCTLV3_MIN_FREQ_CLUSTER_LITTLE_CORE_0(0x40800100)        : 1324 -->
+        <!-- silver cluster max freq     : MPCTLV3_MAX_FREQ_CLUSTER_LITTLE_CORE_0(0x40804100)        : 1804 -->
+        <Config
+            Id="0x00001332" Enable="true" Timeout="0" Target="yupik"
+            Resources="0x40C68100, 0xFFFFFFFA, 0x40C68110, 0xFFFFFFFA, 0x40C68120, 0xFFFFFFFA,
+            0x40C68130, 0xFFFFFFFA, 0x4143C100, 1324, 0x41440100, 0x5F, 0x40C58000, 30, 0x40C54000, 35,
+            0x40C20000,15, 0x40C1C000, 22, 0x40800000, 1024, 0x41000000, 3, 0x40CA8000, 2, 0x40CEC000, 0x1, 0x40800100, 1324, 0x40804100, 1804"/>
+
+        <!-- POWER_HINT_ID_VIDEO_ENCODE_UHD_30FPS -->
+        <!-- CPU CORE 0 SCHED LOAD BOOST : 0x40C68100 : 0xFFFFFFFA -->
+        <!-- CPU CORE 1 SCHED LOAD BOOST : 0x40C68110 : 0xFFFFFFFA -->
+        <!-- CPU CORE 2 SCHED LOAD BOOST : 0x40C68120 : 0xFFFFFFFA -->
+        <!-- CPU CORE 3 SCHED LOAD BOOST : 0x40C68130 : 0xFFFFFFFA -->
+        <!-- CPU Hispeed freq            : MPCTLV3_SCHEDUTIL_HISPEED_FREQ_CLUSTER_LITTLE(0x4143C100) : 1324 -->
+        <!-- CPU Hispeed load            : MPCTLV3_SCHEDUTIL_HISPEED_LOAD_CLUSTER_LITTLE(0x41440100) : 0x5F -->
+        <!-- Sched group downmigrate     : MPCTLV3_SCHED_GROUP_DOWNMIGRATE(0x40C58000)               : 30   -->
+        <!-- Sched group Upmigrate       : MPCTLV3_SCHED_GROUP_UPMIGRATE(0x40C54000)                 : 35   -->
+        <!-- Sched downmigrate           : MPCTLV3_SCHED_DOWNMIGRATE(0x40C20000)                     : 30   -->
+        <!-- Sched Upmigrate             : MPCTLV3_SCHED_UPMIGRATE(0x40C1C000)                       : 35   -->
+        <!-- Sched prefer spread         : MPCTLV3_SCHED_PREFER_SPREAD(0x40CA8000)                   : 2    -->
+        <!-- uclamp latency sensitivity  : MPCTLV3_CPUCTL_FG_UCLAMP_LATENCY_SENSITIVE(0x40CEC000)    : 0x1  -->
+        <!-- silver cluster min freq     : MPCTLV3_MIN_FREQ_CLUSTER_LITTLE_CORE_0(0x40800100)        : 1324 -->
+        <!-- gold   cluster min freq     : MPCTLV3_MIN_FREQ_CLUSTER_BIG_CORE_0   (0x40800000)        : 1344 -->
+        <Config
+            Id="0x00001333" Enable="true" Timeout="0" Target="yupik"
+            Resources="0x40C68100, 0xFFFFFFFA, 0x40C68110, 0xFFFFFFFA, 0x40C68120, 0xFFFFFFFA,
+            0x40C68130, 0xFFFFFFFA, 0x4143C100, 1324, 0x41440100, 0x5F, 0x40C58000, 30, 0x40C54000, 35,
+            0x40C20000, 30, 0x40C1C000, 35, 0x40CA8000, 2, 0x40CEC000, 0x1, 0x40800100, 1324, 0x40800000, 1344"/>
+
+        <!-- POWER_HINT_ID_VIDEO_ENCODE_8K_30FPS -->
+        <!-- Not Used in SM7325 -->
+        <!-- CPU CORE 0 SCHED LOAD BOOST : 0x40C68100 : 0xFFFFFFFA -->
+        <!-- CPU CORE 1 SCHED LOAD BOOST : 0x40C68110 : 0xFFFFFFFA -->
+        <!-- CPU CORE 2 SCHED LOAD BOOST : 0x40C68120 : 0xFFFFFFFA -->
+        <!-- CPU CORE 3 SCHED LOAD BOOST : 0x40C68130 : 0xFFFFFFFA -->
+        <!-- CPU Hispeed freq            : MPCTLV3_SCHEDUTIL_HISPEED_FREQ_CLUSTER_LITTLE(0x4143C100) : 940  -->
+        <!-- CPU Hispeed load            : MPCTLV3_SCHEDUTIL_HISPEED_LOAD_CLUSTER_LITTLE(0x41440100) : 0x5F -->
+        <!-- Sched group downmigrate     : MPCTLV3_SCHED_GROUP_DOWNMIGRATE(0x40C58000)               : 40   -->
+        <!-- Sched group Upmigrate       : MPCTLV3_SCHED_GROUP_UPMIGRATE(0x40C54000)                 : 45   -->
+        <!-- Sched downmigrate           : MPCTLV3_SCHED_DOWNMIGRATE(0x40C20000)                     : 40   -->
+        <!-- Sched Upmigrate             : MPCTLV3_SCHED_UPMIGRATE(0x40C1C000)                       : 45   -->
+        <!-- uclamp latency sensitivity  : MPCTLV3_CPUCTL_FG_UCLAMP_LATENCY_SENSITIVE(0x40CEC000)    : 0x1  -->
+        <!-- silver cluster min freq     : MPCTLV3_MIN_FREQ_CLUSTER_LITTLE_CORE_0(0x40800100)        : 940  -->
+        <!-- silver cluster max freq     : MPCTLV3_MAX_FREQ_CLUSTER_LITTLE_CORE_0(0x40804100)        : 1804 -->
+        <Config
+            Id="0x00001334" Enable="true" Timeout="0" Target="yupik"
+            Resources="0x40C68100, 0xFFFFFFFA, 0x40C68110, 0xFFFFFFFA, 0x40C68120, 0xFFFFFFFA,
+            0x40C68130, 0xFFFFFFFA, 0x4143C100, 940, 0x41440100, 0x5F, 0x40C58000, 40, 0x40C54000, 45,
+            0x40C20000, 40, 0x40C1C000, 45, 0x40CEC000, 0x1, 0x40800100, 940, 0x40804100, 1804"/>
+
+        <!-- POWER_HINT_ID_VIDEO_ENCODE_FHD_60FPS -->
+        <!-- CPU CORE 0 SCHED LOAD BOOST : 0x40C68100 : 0xFFFFFFFA -->
+        <!-- CPU CORE 1 SCHED LOAD BOOST : 0x40C68110 : 0xFFFFFFFA -->
+        <!-- CPU CORE 2 SCHED LOAD BOOST : 0x40C68120 : 0xFFFFFFFA -->
+        <!-- CPU CORE 3 SCHED LOAD BOOST : 0x40C68130 : 0xFFFFFFFA -->
+        <!-- Sched group downmigrate     : MPCTLV3_SCHED_GROUP_DOWNMIGRATE(0x40C58000)               : 30   -->
+        <!-- Sched group Upmigrate       : MPCTLV3_SCHED_GROUP_UPMIGRATE(0x40C54000)                 : 35   -->
+        <!-- Sched downmigrate           : MPCTLV3_SCHED_DOWNMIGRATE(0x40C20000)                     : 30   -->
+        <!-- Sched Upmigrate             : MPCTLV3_SCHED_UPMIGRATE(0x40C1C000)                       : 35   -->
+        <!-- uclamp latency sensitivity  : MPCTLV3_CPUCTL_FG_UCLAMP_LATENCY_SENSITIVE(0x40CEC000)    : 0x1  -->
+        <Config
+            Id="0x00001335" Enable="true" Timeout="0" Target="yupik"
+            Resources="0x40C68100, 0xFFFFFFFA, 0x40C68110, 0xFFFFFFFA, 0x40C68120, 0xFFFFFFFA,
+            0x40C68130, 0xFFFFFFFA, 0x40C58000, 30, 0x40C54000, 35, 0x40C20000, 30, 0x40C1C000, 35, 0x40CEC000, 0x1"/>
+
+        <!-- POWER_HINT_ID_VIDEO_ENCODE_UHD_60FPS -->
+        <!-- Not Used in SM7325 -->
+        <!-- CPU CORE 0 SCHED LOAD BOOST : 0x40C68100 : 0xFFFFFFFA -->
+        <!-- CPU CORE 1 SCHED LOAD BOOST : 0x40C68110 : 0xFFFFFFFA -->
+        <!-- CPU CORE 2 SCHED LOAD BOOST : 0x40C68120 : 0xFFFFFFFA -->
+        <!-- CPU CORE 3 SCHED LOAD BOOST : 0x40C68130 : 0xFFFFFFFA -->
+        <!-- Sched group downmigrate     : MPCTLV3_SCHED_GROUP_DOWNMIGRATE(0x40C58000)               : 30   -->
+        <!-- Sched group Upmigrate       : MPCTLV3_SCHED_GROUP_UPMIGRATE(0x40C54000)                 : 35   -->
+        <!-- Sched downmigrate           : MPCTLV3_SCHED_DOWNMIGRATE(0x40C20000)                     : 30   -->
+        <!-- Sched Upmigrate             : MPCTLV3_SCHED_UPMIGRATE(0x40C1C000)                       : 35   -->
+        <!-- uclamp latency sensitivity  : MPCTLV3_CPUCTL_FG_UCLAMP_LATENCY_SENSITIVE(0x40CEC000)    : 0x1  -->
+        <Config
+            Id="0x00001336" Enable="true" Timeout="0" Target="yupik"
+            Resources="0x40C68100, 0xFFFFFFFA, 0x40C68110, 0xFFFFFFFA, 0x40C68120, 0xFFFFFFFA,
+            0x40C68130, 0xFFFFFFFA, 0x40C58000, 30, 0x40C54000, 35, 0x40C20000, 30, 0x40C1C000, 35, 0x40CEC000, 0x1"/>
+
+        <!-- POWER_HINT_ID_VIDEO_ENCODE_FHD_30FPS_FRONT -->
+        <!-- CPU CORE 0 SCHED LOAD BOOST : 0x40C68100 : 0xFFFFFFFA -->
+        <!-- CPU CORE 1 SCHED LOAD BOOST : 0x40C68110 : 0xFFFFFFFA -->
+        <!-- CPU CORE 2 SCHED LOAD BOOST : 0x40C68120 : 0xFFFFFFFA -->
+        <!-- CPU CORE 3 SCHED LOAD BOOST : 0x40C68130 : 0xFFFFFFFA -->
+        <!-- CPU Hispeed freq            : MPCTLV3_SCHEDUTIL_HISPEED_FREQ_CLUSTER_LITTLE(0x4143C100) : 940  -->
+        <!-- CPU Hispeed load            : MPCTLV3_SCHEDUTIL_HISPEED_LOAD_CLUSTER_LITTLE(0x41440100) : 0x5F -->
+        <!-- Sched group downmigrate     : MPCTLV3_SCHED_GROUP_DOWNMIGRATE(0x40C58000)               : 30   -->
+        <!-- Sched group Upmigrate       : MPCTLV3_SCHED_GROUP_UPMIGRATE(0x40C54000)                 : 35   -->
+        <!-- Sched downmigrate           : MPCTLV3_SCHED_DOWNMIGRATE(0x40C20000)                     : 30   -->
+        <!-- Sched Upmigrate             : MPCTLV3_SCHED_UPMIGRATE(0x40C1C000)                       : 35   -->
+        <!-- uclamp latency sensitivity  : MPCTLV3_CPUCTL_FG_UCLAMP_LATENCY_SENSITIVE(0x40CEC000)    : 0x1  -->
+        <!-- silver cluster min freq     : MPCTLV3_MIN_FREQ_CLUSTER_LITTLE_CORE_0(0x40800100)        : 940  -->
+        <!-- silver cluster max freq     : MPCTLV3_MAX_FREQ_CLUSTER_LITTLE_CORE_0(0x40804100)        : 1804 -->
+        <Config
+            Id="0x00001337" Enable="true" Timeout="0" Target="yupik"
+            Resources="0x40C68100, 0xFFFFFFFA, 0x40C68110, 0xFFFFFFFA, 0x40C68120, 0xFFFFFFFA,
+            0x40C68130, 0xFFFFFFFA, 0x4143C100, 940, 0x41440100, 0x5F, 0x40C58000, 30, 0x40C54000, 35,
+            0x40C20000, 30, 0x40C1C000, 35, 0x40CEC000, 0x1, 0x40800100, 940, 0x40804100, 1804"/>
+
+        <!-- POWER_HINT_ID_VIDEO_ENCODE_UHD_30FPS_FRONT -->
+        <!-- CPU CORE 0 SCHED LOAD BOOST : 0x40C68100 : 0xFFFFFFFA -->
+        <!-- CPU CORE 1 SCHED LOAD BOOST : 0x40C68110 : 0xFFFFFFFA -->
+        <!-- CPU CORE 2 SCHED LOAD BOOST : 0x40C68120 : 0xFFFFFFFA -->
+        <!-- CPU CORE 3 SCHED LOAD BOOST : 0x40C68130 : 0xFFFFFFFA -->
+        <!-- CPU Hispeed freq            : MPCTLV3_SCHEDUTIL_HISPEED_FREQ_CLUSTER_LITTLE(0x4143C100) : 1324  -->
+        <!-- CPU Hispeed load            : MPCTLV3_SCHEDUTIL_HISPEED_LOAD_CLUSTER_LITTLE(0x41440100) : 0x5F -->
+        <!-- Sched group downmigrate     : MPCTLV3_SCHED_GROUP_DOWNMIGRATE(0x40C58000)               : 20   -->
+        <!-- Sched group Upmigrate       : MPCTLV3_SCHED_GROUP_UPMIGRATE(0x40C54000)                 : 30   -->
+        <!-- Sched downmigrate           : MPCTLV3_SCHED_DOWNMIGRATE(0x40C20000)                     : 20   -->
+        <!-- Sched Upmigrate             : MPCTLV3_SCHED_UPMIGRATE(0x40C1C000)                       : 30   -->
+        <!-- Sched prefer spread         : MPCTLV3_SCHED_PREFER_SPREAD(0x40CA8000)                   : 2    -->
+        <!-- uclamp latency sensitivity  : MPCTLV3_CPUCTL_FG_UCLAMP_LATENCY_SENSITIVE(0x40CEC000)    : 0x1  -->
+        <!-- silver cluster min freq     : MPCTLV3_MIN_FREQ_CLUSTER_LITTLE_CORE_0(0x40800100)        : 1324  -->
+        <!-- gold   cluster min freq     : MPCTLV3_MIN_FREQ_CLUSTER_BIG_CORE_0   (0x40800000)        : 1344 -->
+        <Config
+            Id="0x00001338" Enable="true" Timeout="0" Target="yupik"
+            Resources="0x40C68100, 0xFFFFFFFA, 0x40C68110, 0xFFFFFFFA, 0x40C68120, 0xFFFFFFFA, 0x40C68130, 0xFFFFFFFA, 
+            0x4143C100, 1324, 0x41440100, 0x5F, 0x40C58000, 20, 0x40C54000, 30, 0x40C20000, 20, 0x40C1C000, 30, 0x40CA8000, 2,
+            0x40CEC000, 0x1, 0x40800100, 1324, 0x40800000, 1344"/>
+
+        <!-- POWER_HINT_ID_VIDEO_ENCODE_FHD_60FPS_FRONT -->
+        <!-- CPU CORE 0 SCHED LOAD BOOST : 0x40C68100 : 0xFFFFFFFA -->
+        <!-- CPU CORE 1 SCHED LOAD BOOST : 0x40C68110 : 0xFFFFFFFA -->
+        <!-- CPU CORE 2 SCHED LOAD BOOST : 0x40C68120 : 0xFFFFFFFA -->
+        <!-- CPU CORE 3 SCHED LOAD BOOST : 0x40C68130 : 0xFFFFFFFA -->
+        <!-- Sched group downmigrate     : MPCTLV3_SCHED_GROUP_DOWNMIGRATE(0x40C58000)               : 30   -->
+        <!-- Sched group Upmigrate       : MPCTLV3_SCHED_GROUP_UPMIGRATE(0x40C54000)                 : 35   -->
+        <!-- Sched downmigrate           : MPCTLV3_SCHED_DOWNMIGRATE(0x40C20000)                     : 30   -->
+        <!-- Sched Upmigrate             : MPCTLV3_SCHED_UPMIGRATE(0x40C1C000)                       : 35   -->
+        <!-- uclamp latency sensitivity  : MPCTLV3_CPUCTL_FG_UCLAMP_LATENCY_SENSITIVE(0x40CEC000)    : 0x1  -->
+        <Config
+            Id="0x00001339" Enable="true" Timeout="0" Target="yupik"
+            Resources="0x40C68100, 0xFFFFFFFA, 0x40C68110, 0xFFFFFFFA, 0x40C68120, 0xFFFFFFFA,
+            0x40C68130, 0xFFFFFFFA, 0x40C58000, 30, 0x40C54000, 35, 0x40C20000, 30, 0x40C1C000, 35, 0x40CEC000, 0x1"/>
+
+        <!-- POWER_HINT_ID_VIDEO_ENCODE_UHD_60FPS_FRONT -->
+        <!-- Not Used in SM7325 -->
+        <!-- CPU CORE 0 SCHED LOAD BOOST : 0x40C68100 : 0xFFFFFFFA -->
+        <!-- CPU CORE 1 SCHED LOAD BOOST : 0x40C68110 : 0xFFFFFFFA -->
+        <!-- CPU CORE 2 SCHED LOAD BOOST : 0x40C68120 : 0xFFFFFFFA -->
+        <!-- CPU CORE 3 SCHED LOAD BOOST : 0x40C68130 : 0xFFFFFFFA -->
+        <!-- Sched group downmigrate     : MPCTLV3_SCHED_GROUP_DOWNMIGRATE(0x40C58000)               : 30   -->
+        <!-- Sched group Upmigrate       : MPCTLV3_SCHED_GROUP_UPMIGRATE(0x40C54000)                 : 35   -->
+        <!-- Sched downmigrate           : MPCTLV3_SCHED_DOWNMIGRATE(0x40C20000)                     : 30   -->
+        <!-- Sched Upmigrate             : MPCTLV3_SCHED_UPMIGRATE(0x40C1C000)                       : 35   -->
+        <!-- uclamp latency sensitivity  : MPCTLV3_CPUCTL_FG_UCLAMP_LATENCY_SENSITIVE(0x40CEC000)    : 0x1  -->
+        <Config
+            Id="0x0000133A" Enable="true" Timeout="0" Target="yupik"
+            Resources="0x40C68100, 0xFFFFFFFA, 0x40C68110, 0xFFFFFFFA, 0x40C68120, 0xFFFFFFFA,
+            0x40C68130, 0xFFFFFFFA, 0x40C58000, 30, 0x40C54000, 35, 0x40C20000, 30, 0x40C1C000, 35, 0x40CEC000, 0x1"/>
+
+        <!-- POWER_HINT_ID_VIDEO_ENCODE_FHD_30FPS_PRO -->
+        <!-- CPU CORE 0 SCHED LOAD BOOST : 0x40C68100 : 0xFFFFFFFA -->
+        <!-- CPU CORE 1 SCHED LOAD BOOST : 0x40C68110 : 0xFFFFFFFA -->
+        <!-- CPU CORE 2 SCHED LOAD BOOST : 0x40C68120 : 0xFFFFFFFA -->
+        <!-- CPU CORE 3 SCHED LOAD BOOST : 0x40C68130 : 0xFFFFFFFA -->
+        <!-- CPU Hispeed freq            : MPCTLV3_SCHEDUTIL_HISPEED_FREQ_CLUSTER_LITTLE(0x4143C100) : 1324  -->
+        <!-- CPU Hispeed load            : MPCTLV3_SCHEDUTIL_HISPEED_LOAD_CLUSTER_LITTLE(0x41440100) : 0x5F -->
+        <!-- Sched group downmigrate     : MPCTLV3_SCHED_GROUP_DOWNMIGRATE(0x40C58000)               : 30   -->
+        <!-- Sched group Upmigrate       : MPCTLV3_SCHED_GROUP_UPMIGRATE(0x40C54000)                 : 35   -->
+        <!-- Sched downmigrate           : MPCTLV3_SCHED_DOWNMIGRATE(0x40C20000)                     : 30   -->
+        <!-- Sched Upmigrate             : MPCTLV3_SCHED_UPMIGRATE(0x40C1C000)                       : 35   -->
+        <!-- Sched prefer spread         : MPCTLV3_SCHED_PREFER_SPREAD(0x40CA8000)                   : 2    -->
+        <!-- uclamp latency sensitivity  : MPCTLV3_CPUCTL_FG_UCLAMP_LATENCY_SENSITIVE(0x40CEC000)    : 0x1  -->
+        <!-- silver cluster min freq     : MPCTLV3_MIN_FREQ_CLUSTER_LITTLE_CORE_0(0x40800100)        : 1324  -->
+        <!-- gold   cluster min freq     : MPCTLV3_MIN_FREQ_CLUSTER_BIG_CORE_0   (0x40800000)        : 1056 -->
+        <Config
+            Id="0x0000133B" Enable="true" Timeout="0" Target="yupik"
+            Resources="0x40C68100, 0xFFFFFFFA, 0x40C68110, 0xFFFFFFFA, 0x40C68120, 0xFFFFFFFA, 0x40C68130, 0xFFFFFFFA, 
+            0x4143C100, 1324, 0x41440100, 0x5F, 0x40C58000, 30, 0x40C54000, 35, 0x40C20000, 30, 0x40C1C000, 35, 
+            0x40CA8000, 2, 0x40CEC000, 0x1, 0x40800100, 1324, 0x40800000, 1056"/>
+
+        <!-- POWER_HINT_ID_VIDEO_ENCODE_UHD_30FPS_PRO -->
+        <!-- CPU CORE 0 SCHED LOAD BOOST : 0x40C68100 : 0xFFFFFFFA -->
+        <!-- CPU CORE 1 SCHED LOAD BOOST : 0x40C68110 : 0xFFFFFFFA -->
+        <!-- CPU CORE 2 SCHED LOAD BOOST : 0x40C68120 : 0xFFFFFFFA -->
+        <!-- CPU CORE 3 SCHED LOAD BOOST : 0x40C68130 : 0xFFFFFFFA -->
+        <!-- CPU Hispeed freq            : MPCTLV3_SCHEDUTIL_HISPEED_FREQ_CLUSTER_LITTLE(0x4143C100) : 1324 -->
+        <!-- CPU Hispeed load            : MPCTLV3_SCHEDUTIL_HISPEED_LOAD_CLUSTER_LITTLE(0x41440100) : 0x5F -->
+        <!-- Sched group downmigrate     : MPCTLV3_SCHED_GROUP_DOWNMIGRATE(0x40C58000)               : 30   -->
+        <!-- Sched group Upmigrate       : MPCTLV3_SCHED_GROUP_UPMIGRATE(0x40C54000)                 : 35   -->
+        <!-- Sched downmigrate           : MPCTLV3_SCHED_DOWNMIGRATE(0x40C20000)                     : 30   -->
+        <!-- Sched Upmigrate             : MPCTLV3_SCHED_UPMIGRATE(0x40C1C000)                       : 35   -->
+        <!-- Sched prefer spread         : MPCTLV3_SCHED_PREFER_SPREAD(0x40CA8000)                   : 2    -->
+        <!-- uclamp latency sensitivity  : MPCTLV3_CPUCTL_FG_UCLAMP_LATENCY_SENSITIVE(0x40CEC000)    : 0x1  -->
+        <!-- silver cluster min freq     : MPCTLV3_MIN_FREQ_CLUSTER_LITTLE_CORE_0(0x40800100)        : 1324 -->
+        <!-- gold   cluster min freq     : MPCTLV3_MIN_FREQ_CLUSTER_BIG_CORE_0   (0x40800000)        : 1344 -->
+        <Config
+            Id="0x0000133C" Enable="true" Timeout="0" Target="yupik"
+            Resources="0x40C68100, 0xFFFFFFFA, 0x40C68110, 0xFFFFFFFA, 0x40C68120, 0xFFFFFFFA,
+            0x40C68130, 0xFFFFFFFA, 0x4143C100, 1324, 0x41440100, 0x5F, 0x40C58000, 30, 0x40C54000, 35,
+            0x40C20000, 30, 0x40C1C000, 35, 0x40CA8000, 2, 0x40CEC000, 0x1, 0x40800100, 1324, 0x40800000, 1344"/>
+
+
+        <!-- POWER_HINT_ID_VIDEO_ENCODE_8K_30FPS_PRO -->
+        <!-- Not Used in SM7325 -->
+        <!-- CPU CORE 0 SCHED LOAD BOOST : 0x40C68100 : 0xFFFFFFFA -->
+        <!-- CPU CORE 1 SCHED LOAD BOOST : 0x40C68110 : 0xFFFFFFFA -->
+        <!-- CPU CORE 2 SCHED LOAD BOOST : 0x40C68120 : 0xFFFFFFFA -->
+        <!-- CPU CORE 3 SCHED LOAD BOOST : 0x40C68130 : 0xFFFFFFFA -->
+        <!-- CPU Hispeed freq            : MPCTLV3_SCHEDUTIL_HISPEED_FREQ_CLUSTER_LITTLE(0x4143C100) : 940  -->
+        <!-- CPU Hispeed load            : MPCTLV3_SCHEDUTIL_HISPEED_LOAD_CLUSTER_LITTLE(0x41440100) : 0x5F -->
+        <!-- Sched group downmigrate     : MPCTLV3_SCHED_GROUP_DOWNMIGRATE(0x40C58000)               : 40   -->
+        <!-- Sched group Upmigrate       : MPCTLV3_SCHED_GROUP_UPMIGRATE(0x40C54000)                 : 45   -->
+        <!-- Sched downmigrate           : MPCTLV3_SCHED_DOWNMIGRATE(0x40C20000)                     : 40   -->
+        <!-- Sched Upmigrate             : MPCTLV3_SCHED_UPMIGRATE(0x40C1C000)                       : 45   -->
+        <!-- uclamp latency sensitivity  : MPCTLV3_CPUCTL_FG_UCLAMP_LATENCY_SENSITIVE(0x40CEC000)    : 0x1  -->
+        <!-- silver cluster min freq     : MPCTLV3_MIN_FREQ_CLUSTER_LITTLE_CORE_0(0x40800100)        : 940  -->
+        <!-- silver cluster max freq     : MPCTLV3_MAX_FREQ_CLUSTER_LITTLE_CORE_0(0x40804100)        : 1804 -->
+        <Config
+            Id="0x0000133D" Enable="true" Timeout="0" Target="yupik"
+            Resources="0x40C68100, 0xFFFFFFFA, 0x40C68110, 0xFFFFFFFA, 0x40C68120, 0xFFFFFFFA,
+            0x40C68130, 0xFFFFFFFA, 0x4143C100, 940, 0x41440100, 0x5F, 0x40C58000, 40, 0x40C54000, 45,
+            0x40C20000, 40, 0x40C1C000, 45, 0x40CEC000, 0x1, 0x40800100, 940, 0x40804100, 1804"/>
+
+        <!-- POWER_HINT_ID_VIDEO_ENCODE_FHD_60FPS_PRO -->
+        <!-- CPU CORE 0 SCHED LOAD BOOST : 0x40C68100 : 0xFFFFFFFA -->
+        <!-- CPU CORE 1 SCHED LOAD BOOST : 0x40C68110 : 0xFFFFFFFA -->
+        <!-- CPU CORE 2 SCHED LOAD BOOST : 0x40C68120 : 0xFFFFFFFA -->
+        <!-- CPU CORE 3 SCHED LOAD BOOST : 0x40C68130 : 0xFFFFFFFA -->
+        <!-- Sched group downmigrate     : MPCTLV3_SCHED_GROUP_DOWNMIGRATE(0x40C58000)               : 30   -->
+        <!-- Sched group Upmigrate       : MPCTLV3_SCHED_GROUP_UPMIGRATE(0x40C54000)                 : 35   -->
+        <!-- Sched downmigrate           : MPCTLV3_SCHED_DOWNMIGRATE(0x40C20000)                     : 30   -->
+        <!-- Sched Upmigrate             : MPCTLV3_SCHED_UPMIGRATE(0x40C1C000)                       : 35   -->
+        <!-- uclamp latency sensitivity  : MPCTLV3_CPUCTL_FG_UCLAMP_LATENCY_SENSITIVE(0x40CEC000)    : 0x1  -->
+        <Config
+            Id="0x0000133E" Enable="true" Timeout="0" Target="yupik"
+            Resources="0x40C68100, 0xFFFFFFFA, 0x40C68110, 0xFFFFFFFA, 0x40C68120, 0xFFFFFFFA,
+            0x40C68130, 0xFFFFFFFA, 0x40C58000, 30, 0x40C54000, 35, 0x40C20000, 30, 0x40C1C000, 35, 0x40CEC000, 0x1"/>
+
+        <!-- POWER_HINT_ID_VIDEO_ENCODE_UHD_60FPS_PRO -->
+        <!-- Not Used in SM7325 -->
+        <!-- CPU CORE 0 SCHED LOAD BOOST : 0x40C68100 : 0xFFFFFFFA -->
+        <!-- CPU CORE 1 SCHED LOAD BOOST : 0x40C68110 : 0xFFFFFFFA -->
+        <!-- CPU CORE 2 SCHED LOAD BOOST : 0x40C68120 : 0xFFFFFFFA -->
+        <!-- CPU CORE 3 SCHED LOAD BOOST : 0x40C68130 : 0xFFFFFFFA -->
+        <!-- Sched group downmigrate     : MPCTLV3_SCHED_GROUP_DOWNMIGRATE(0x40C58000)               : 30   -->
+        <!-- Sched group Upmigrate       : MPCTLV3_SCHED_GROUP_UPMIGRATE(0x40C54000)                 : 35   -->
+        <!-- Sched downmigrate           : MPCTLV3_SCHED_DOWNMIGRATE(0x40C20000)                     : 30   -->
+        <!-- Sched Upmigrate             : MPCTLV3_SCHED_UPMIGRATE(0x40C1C000)                       : 35   -->
+        <!-- uclamp latency sensitivity  : MPCTLV3_CPUCTL_FG_UCLAMP_LATENCY_SENSITIVE(0x40CEC000)    : 0x1  -->
+        <Config
+            Id="0x0000133F" Enable="true" Timeout="0" Target="yupik"
+            Resources="0x40C68100, 0xFFFFFFFA, 0x40C68110, 0xFFFFFFFA, 0x40C68120, 0xFFFFFFFA,
+            0x40C68130, 0xFFFFFFFA, 0x40C58000, 30, 0x40C54000, 35, 0x40C20000, 30, 0x40C1C000, 35, 0x40CEC000, 0x1"/>
+
+        <!-- POWER_HINT_ID_VIDEO_ENCODE_FHD_120FPS_PRO -->
+        <!-- Not Used in SM7325 -->
+        <!-- low power mode disable      : MPCTLV3_ALL_CPUS_PWR_CLPS_DIS(0x40400000) : 1 -->
+        <!-- CPU CORE 0 SCHED LOAD BOOST : 0x40C68100 : 0xFFFFFFFA -->
+        <!-- CPU CORE 1 SCHED LOAD BOOST : 0x40C68110 : 0xFFFFFFFA -->
+        <!-- CPU CORE 2 SCHED LOAD BOOST : 0x40C68120 : 0xFFFFFFFA -->
+        <!-- CPU CORE 3 SCHED LOAD BOOST : 0x40C68130 : 0xFFFFFFFA -->
+        <!-- Sched group downmigrate     : MPCTLV3_SCHED_GROUP_DOWNMIGRATE(0x40C58000)               : 30   -->
+        <!-- Sched group Upmigrate       : MPCTLV3_SCHED_GROUP_UPMIGRATE(0x40C54000)                 : 35   -->
+        <!-- Sched downmigrate           : MPCTLV3_SCHED_DOWNMIGRATE(0x40C20000)                     : 30   -->
+        <!-- Sched Upmigrate             : MPCTLV3_SCHED_UPMIGRATE(0x40C1C000)                       : 35   -->
+        <!-- uclamp latency sensitivity  : MPCTLV3_CPUCTL_FG_UCLAMP_LATENCY_SENSITIVE(0x40CEC000)    : 0x1  -->
+        <Config
+            Id="0x00001340" Enable="true" Timeout="0" Target="yupik"
+            Resources="0x40400000, 0x1, 0x40C68100, 0xFFFFFFFA, 0x40C68110, 0xFFFFFFFA, 0x40C68120, 0xFFFFFFFA,
+            0x40C68130, 0xFFFFFFFA, 0x40C58000, 30, 0x40C54000, 35, 0x40C20000, 30, 0x40C1C000, 35, 0x40CEC000, 0x1"/>
+
+        <!-- POWER_HINT_ID_VIDEO_ENCODE_HFR -->
+        <!-- low power mode disable      : MPCTLV3_ALL_CPUS_PWR_CLPS_DIS(0x40400000) : 1 -->
+        <!-- CPU CORE 0 SCHED LOAD BOOST : 0x40C68100 : 0xFFFFFFFA -->
+        <!-- CPU CORE 1 SCHED LOAD BOOST : 0x40C68110 : 0xFFFFFFFA -->
+        <!-- CPU CORE 2 SCHED LOAD BOOST : 0x40C68120 : 0xFFFFFFFA -->
+        <!-- CPU CORE 3 SCHED LOAD BOOST : 0x40C68130 : 0xFFFFFFFA -->
+        <!-- silver cluster min freq     : MPCTLV3_MIN_FREQ_CLUSTER_LITTLE_CORE_0(0x40800100)        : 1075 -->
+        <!-- gold cluster min freq       : MPCTLV3_MIN_FREQ_CLUSTER_BIG_CORE_0(0x40800000)           : 940  -->
+        <!-- Sched group downmigrate     : MPCTLV3_SCHED_GROUP_DOWNMIGRATE(0x40C58000)               : 30   -->
+        <!-- Sched group Upmigrate       : MPCTLV3_SCHED_GROUP_UPMIGRATE(0x40C54000)                 : 35   -->
+        <!-- Sched downmigrate           : MPCTLV3_SCHED_DOWNMIGRATE(0x40C20000)                     : 30   -->
+        <!-- Sched Upmigrate             : MPCTLV3_SCHED_UPMIGRATE(0x40C1C000)                       : 35   -->
+        <Config
+            Id="0x00001341" Enable="true" Timeout="0" Target="yupik"
+            Resources="0x40400000, 0x1, 0x40C68100, 0xFFFFFFFA, 0x40C68110, 0xFFFFFFFA, 0x40C68120, 0xFFFFFFFA,
+            0x40C68130, 0xFFFFFFFA, 0x40800100, 0x433, 0x40800000, 940, 0x40C58000, 30, 0x40C54000, 35,
+            0x40C20000, 30, 0x40C1C000, 35"/>
+
+        <!-- POWER_HINT_ID_VIDEO_ENCODE_HFR_480FPS -->
+        <!-- low power mode disable      : MPCTLV3_ALL_CPUS_PWR_CLPS_DIS(0x40400000) : 1 -->
+        <!-- CPU CORE 0 SCHED LOAD BOOST : 0x40C68100 : 0xFFFFFFFA -->
+        <!-- CPU CORE 1 SCHED LOAD BOOST : 0x40C68110 : 0xFFFFFFFA -->
+        <!-- CPU CORE 2 SCHED LOAD BOOST : 0x40C68120 : 0xFFFFFFFA -->
+        <!-- CPU CORE 3 SCHED LOAD BOOST : 0x40C68130 : 0xFFFFFFFA -->
+        <!-- silver cluster min freq     : MPCTLV3_MIN_FREQ_CLUSTER_LITTLE_CORE_0(0x40800100)        : 1075 -->
+        <!-- gold cluster min freq       : MPCTLV3_MIN_FREQ_CLUSTER_BIG_CORE_0(0x40800000)           : 940  -->
+        <!-- Sched group downmigrate     : MPCTLV3_SCHED_GROUP_DOWNMIGRATE(0x40C58000)               : 30   -->
+        <!-- Sched group Upmigrate       : MPCTLV3_SCHED_GROUP_UPMIGRATE(0x40C54000)                 : 35   -->
+        <!-- Sched downmigrate           : MPCTLV3_SCHED_DOWNMIGRATE(0x40C20000)                     : 30   -->
+        <!-- Sched Upmigrate             : MPCTLV3_SCHED_UPMIGRATE(0x40C1C000)                       : 35   -->
+        <Config
+            Id="0x00001342" Enable="true" Timeout="0" Target="yupik"
+            Resources="0x40400000, 0x1, 0x40C68100, 0xFFFFFFFA, 0x40C68110, 0xFFFFFFFA, 0x40C68120, 0xFFFFFFFA,
+            0x40C68130, 0xFFFFFFFA, 0x40800100, 0x433, 0x40800000, 940, 0x40C58000, 30, 0x40C54000, 35,
+            0x40C20000, 30, 0x40C1C000, 35"/>
+
+        <!-- POWER_HINT_ID_VIDEO_ENCODE_FHD_30FPS_BEAUTY -->
+        <!-- CPU CORE 0 SCHED LOAD BOOST : 0x40C68100 : 0xFFFFFFFA -->
+        <!-- CPU CORE 1 SCHED LOAD BOOST : 0x40C68110 : 0xFFFFFFFA -->
+        <!-- CPU CORE 2 SCHED LOAD BOOST : 0x40C68120 : 0xFFFFFFFA -->
+        <!-- CPU CORE 3 SCHED LOAD BOOST : 0x40C68130 : 0xFFFFFFFA -->
+        <!-- CPU Hispeed freq            : MPCTLV3_SCHEDUTIL_HISPEED_FREQ_CLUSTER_LITTLE(0x4143C100) : 1516 -->
+        <!-- CPU Hispeed load            : MPCTLV3_SCHEDUTIL_HISPEED_LOAD_CLUSTER_LITTLE(0x41440100) : 0x5F -->
+        <!-- Sched group downmigrate     : MPCTLV3_SCHED_GROUP_DOWNMIGRATE(0x40C58000)               : 20   -->
+        <!-- Sched group Upmigrate       : MPCTLV3_SCHED_GROUP_UPMIGRATE(0x40C54000)                 : 25   -->
+        <!-- Sched downmigrate           : MPCTLV3_SCHED_DOWNMIGRATE(0x40C20000)                     : 20   -->
+        <!-- Sched Upmigrate             : MPCTLV3_SCHED_UPMIGRATE(0x40C1C000)                       : 25   -->
+        <!-- Sched prefer spread         : MPCTLV3_SCHED_PREFER_SPREAD(0x40CA8000)                   : 2    -->
+        <!-- uclamp latency sensitivity  : MPCTLV3_CPUCTL_FG_UCLAMP_LATENCY_SENSITIVE(0x40CEC000)    : 0x1  -->
+        <!-- silver cluster min freq     : MPCTLV3_MIN_FREQ_CLUSTER_LITTLE_CORE_0(0x40800100)        : 1516  -->
+        <!-- gold   cluster min freq     : MPCTLV3_MIN_FREQ_CLUSTER_BIG_CORE_0   (0x40800000)        : 1516 -->
+        <Config
+            Id="0x00001343" Enable="true" Timeout="0" Target="yupik"
+            Resources="0x40C68100, 0xFFFFFFFA, 0x40C68110, 0xFFFFFFFA, 0x40C68120, 0xFFFFFFFA,
+            0x40C68130, 0xFFFFFFFA, 0x4143C100, 1516, 0x41440100, 0x5F, 0x40C58000, 20, 0x40C54000, 25,
+            0x40C20000, 20, 0x40C1C000, 25, 0x40CA8000, 2, 0x40CEC000, 0x1, 0x40800100, 1516, 0x40800000, 1516"/>
+
+        <!-- POWER_HINT_ID_VIDEO_ENCODE_UHD_30FPS_BEAUTY -->
+        <!-- CPU CORE 0 SCHED LOAD BOOST : 0x40C68100 : 0xFFFFFFFA -->
+        <!-- CPU CORE 1 SCHED LOAD BOOST : 0x40C68110 : 0xFFFFFFFA -->
+        <!-- CPU CORE 2 SCHED LOAD BOOST : 0x40C68120 : 0xFFFFFFFA -->
+        <!-- CPU CORE 3 SCHED LOAD BOOST : 0x40C68130 : 0xFFFFFFFA -->
+        <!-- CPU Hispeed freq            : MPCTLV3_SCHEDUTIL_HISPEED_FREQ_CLUSTER_LITTLE(0x4143C100) : 940  -->
+        <!-- CPU Hispeed load            : MPCTLV3_SCHEDUTIL_HISPEED_LOAD_CLUSTER_LITTLE(0x41440100) : 0x5F -->
+        <!-- Sched group downmigrate     : MPCTLV3_SCHED_GROUP_DOWNMIGRATE(0x40C58000)               : 30   -->
+        <!-- Sched group Upmigrate       : MPCTLV3_SCHED_GROUP_UPMIGRATE(0x40C54000)                 : 35   -->
+        <!-- Sched downmigrate           : MPCTLV3_SCHED_DOWNMIGRATE(0x40C20000)                     : 30   -->
+        <!-- Sched Upmigrate             : MPCTLV3_SCHED_UPMIGRATE(0x40C1C000)                       : 35   -->
+        <!-- uclamp latency sensitivity  : MPCTLV3_CPUCTL_FG_UCLAMP_LATENCY_SENSITIVE(0x40CEC000)    : 0x1  -->
+        <!-- silver cluster min freq     : MPCTLV3_MIN_FREQ_CLUSTER_LITTLE_CORE_0(0x40800100)        : 940  -->
+        <!-- silver cluster max freq     : MPCTLV3_MAX_FREQ_CLUSTER_LITTLE_CORE_0(0x40804100)        : 1804 -->
+        <Config
+            Id="0x00001344" Enable="true" Timeout="0" Target="yupik"
+            Resources="0x40C68100, 0xFFFFFFFA, 0x40C68110, 0xFFFFFFFA, 0x40C68120, 0xFFFFFFFA,
+            0x40C68130, 0xFFFFFFFA, 0x4143C100, 940, 0x41440100, 0x5F, 0x40C58000, 30, 0x40C54000, 35,
+            0x40C20000, 30, 0x40C1C000, 35, 0x40CEC000, 0x1, 0x40800100, 940, 0x40804100, 1804"/>
+
+        <!-- POWER_HINT_ID_VIDEO_ENCODE_FHD_60FPS_BEAUTY -->
+        <!-- CPU CORE 0 SCHED LOAD BOOST : 0x40C68100 : 0xFFFFFFFA -->
+        <!-- CPU CORE 1 SCHED LOAD BOOST : 0x40C68110 : 0xFFFFFFFA -->
+        <!-- CPU CORE 2 SCHED LOAD BOOST : 0x40C68120 : 0xFFFFFFFA -->
+        <!-- CPU CORE 3 SCHED LOAD BOOST : 0x40C68130 : 0xFFFFFFFA -->
+        <!-- Sched group downmigrate     : MPCTLV3_SCHED_GROUP_DOWNMIGRATE(0x40C58000)               : 30   -->
+        <!-- Sched group Upmigrate       : MPCTLV3_SCHED_GROUP_UPMIGRATE(0x40C54000)                 : 35   -->
+        <!-- Sched downmigrate           : MPCTLV3_SCHED_DOWNMIGRATE(0x40C20000)                     : 30   -->
+        <!-- Sched Upmigrate             : MPCTLV3_SCHED_UPMIGRATE(0x40C1C000)                       : 35   -->
+        <!-- uclamp latency sensitivity  : MPCTLV3_CPUCTL_FG_UCLAMP_LATENCY_SENSITIVE(0x40CEC000)    : 0x1  -->
+        <Config
+            Id="0x00001345" Enable="true" Timeout="0" Target="yupik"
+            Resources="0x40C68100, 0xFFFFFFFA, 0x40C68110, 0xFFFFFFFA, 0x40C68120, 0xFFFFFFFA,
+            0x40C68130, 0xFFFFFFFA, 0x40C58000, 30, 0x40C54000, 35, 0x40C20000, 30, 0x40C1C000, 35, 0x40CEC000, 0x1"/>
+
+        <!-- POWER_HINT_ID_VIDEO_ENCODE_FHD_30FPS_BEAUTY_FRONT -->
+        <!-- CPU CORE 0 SCHED LOAD BOOST : 0x40C68100 : 0xFFFFFFFA -->
+        <!-- CPU CORE 1 SCHED LOAD BOOST : 0x40C68110 : 0xFFFFFFFA -->
+        <!-- CPU CORE 2 SCHED LOAD BOOST : 0x40C68120 : 0xFFFFFFFA -->
+        <!-- CPU CORE 3 SCHED LOAD BOOST : 0x40C68130 : 0xFFFFFFFA -->
+        <!-- CPU Hispeed freq            : MPCTLV3_SCHEDUTIL_HISPEED_FREQ_CLUSTER_LITTLE(0x4143C100) : 940  -->
+        <!-- CPU Hispeed load            : MPCTLV3_SCHEDUTIL_HISPEED_LOAD_CLUSTER_LITTLE(0x41440100) : 0x5F -->
+        <!-- Sched group downmigrate     : MPCTLV3_SCHED_GROUP_DOWNMIGRATE(0x40C58000)               : 25   -->
+        <!-- Sched group Upmigrate       : MPCTLV3_SCHED_GROUP_UPMIGRATE(0x40C54000)                 : 30   -->
+        <!-- Sched downmigrate           : MPCTLV3_SCHED_DOWNMIGRATE(0x40C20000)                     : 25   -->
+        <!-- Sched Upmigrate             : MPCTLV3_SCHED_UPMIGRATE(0x40C1C000)                       : 30   -->
+        <!-- uclamp latency sensitivity  : MPCTLV3_CPUCTL_FG_UCLAMP_LATENCY_SENSITIVE(0x40CEC000)    : 0x1  -->
+        <!-- silver cluster min freq     : MPCTLV3_MIN_FREQ_CLUSTER_LITTLE_CORE_0(0x40800100)        : 1324  -->
+        <!-- gold   cluster min freq     : MPCTLV3_MIN_FREQ_CLUSTER_BIG_CORE_0   (0x40800000)        : 1344 -->
+        <Config
+            Id="0x00001346" Enable="true" Timeout="0" Target="yupik"
+            Resources="0x40C68100, 0xFFFFFFFA, 0x40C68110, 0xFFFFFFFA, 0x40C68120, 0xFFFFFFFA, 0x40C68130, 0xFFFFFFFA, 
+            0x4143C100, 940, 0x41440100, 0x5F, 0x40C58000, 25, 0x40C54000, 30, 0x40C20000, 25, 0x40C1C000, 30, 
+            0x40CEC000, 0x1, 0x40800100, 1324, 0x40800000, 1344"/>
+
+        <!-- POWER_HINT_ID_VIDEO_ENCODE_FHD_60FPS_BEAUTY_FRONT -->
+        <!-- CPU CORE 0 SCHED LOAD BOOST : 0x40C68100 : 0xFFFFFFFA -->
+        <!-- CPU CORE 1 SCHED LOAD BOOST : 0x40C68110 : 0xFFFFFFFA -->
+        <!-- CPU CORE 2 SCHED LOAD BOOST : 0x40C68120 : 0xFFFFFFFA -->
+        <!-- CPU CORE 3 SCHED LOAD BOOST : 0x40C68130 : 0xFFFFFFFA -->
+        <!-- Sched group downmigrate     : MPCTLV3_SCHED_GROUP_DOWNMIGRATE(0x40C58000)               : 30   -->
+        <!-- Sched group Upmigrate       : MPCTLV3_SCHED_GROUP_UPMIGRATE(0x40C54000)                 : 35   -->
+        <!-- Sched downmigrate           : MPCTLV3_SCHED_DOWNMIGRATE(0x40C20000)                     : 30   -->
+        <!-- Sched Upmigrate             : MPCTLV3_SCHED_UPMIGRATE(0x40C1C000)                       : 35   -->
+        <!-- uclamp latency sensitivity  : MPCTLV3_CPUCTL_FG_UCLAMP_LATENCY_SENSITIVE(0x40CEC000)    : 0x1  -->
+        <Config
+            Id="0x00001347" Enable="true" Timeout="0" Target="yupik"
+            Resources="0x40C68100, 0xFFFFFFFA, 0x40C68110, 0xFFFFFFFA, 0x40C68120, 0xFFFFFFFA,
+            0x40C68130, 0xFFFFFFFA, 0x40C58000, 30, 0x40C54000, 35, 0x40C20000, 30, 0x40C1C000, 35, 0x40CEC000, 0x1"/>
+
+        <!-- POWER_HINT_ID_VIDEO_ENCODE_FHD_30FPS_HDR10 -->
+        <!-- Not Used in SM7325 -->
+        <!-- CPU CORE 0 SCHED LOAD BOOST : 0x40C68100 : 0xFFFFFFFA -->
+        <!-- CPU CORE 1 SCHED LOAD BOOST : 0x40C68110 : 0xFFFFFFFA -->
+        <!-- CPU CORE 2 SCHED LOAD BOOST : 0x40C68120 : 0xFFFFFFFA -->
+        <!-- CPU CORE 3 SCHED LOAD BOOST : 0x40C68130 : 0xFFFFFFFA -->
+        <!-- CPU Hispeed freq            : MPCTLV3_SCHEDUTIL_HISPEED_FREQ_CLUSTER_LITTLE(0x4143C100) : 940  -->
+        <!-- CPU Hispeed load            : MPCTLV3_SCHEDUTIL_HISPEED_LOAD_CLUSTER_LITTLE(0x41440100) : 0x5F -->
+        <!-- Sched group downmigrate     : MPCTLV3_SCHED_GROUP_DOWNMIGRATE(0x40C58000)               : 30   -->
+        <!-- Sched group Upmigrate       : MPCTLV3_SCHED_GROUP_UPMIGRATE(0x40C54000)                 : 35   -->
+        <!-- Sched downmigrate           : MPCTLV3_SCHED_DOWNMIGRATE(0x40C20000)                     : 30   -->
+        <!-- Sched Upmigrate             : MPCTLV3_SCHED_UPMIGRATE(0x40C1C000)                       : 35   -->
+        <!-- uclamp latency sensitivity  : MPCTLV3_CPUCTL_FG_UCLAMP_LATENCY_SENSITIVE(0x40CEC000)    : 0x1  -->
+        <!-- silver cluster min freq     : MPCTLV3_MIN_FREQ_CLUSTER_LITTLE_CORE_0(0x40800100)        : 940  -->
+        <!-- silver cluster max freq     : MPCTLV3_MAX_FREQ_CLUSTER_LITTLE_CORE_0(0x40804100)        : 1804 -->
+        <Config
+            Id="0x00001348" Enable="true" Timeout="0" Target="yupik"
+            Resources="0x40C68100, 0xFFFFFFFA, 0x40C68110, 0xFFFFFFFA, 0x40C68120, 0xFFFFFFFA,
+            0x40C68130, 0xFFFFFFFA, 0x4143C100, 940, 0x41440100, 0x5F, 0x40C58000, 30, 0x40C54000, 35,
+            0x40C20000, 30, 0x40C1C000, 35, 0x40CEC000, 0x1, 0x40800100, 940, 0x40804100, 1804"/>
+
+        <!-- POWER_HINT_ID_VIDEO_ENCODE_UHD_30FPS_HDR10 -->
+        <!-- Not Used in SM7325 -->
+        <!-- low power mode disable      : MPCTLV3_ALL_CPUS_PWR_CLPS_DIS(0x40400000) : 1 -->
+        <!-- gpu min lock                : MPCTLV3_GPU_MIN_POWER_LEVEL(0x42804000)   : 0x6(490Mhz) -->
+        <!-- CPU CORE 0 SCHED LOAD BOOST : 0x40C68100 : 0xFFFFFFFA -->
+        <!-- CPU CORE 1 SCHED LOAD BOOST : 0x40C68110 : 0xFFFFFFFA -->
+        <!-- CPU CORE 2 SCHED LOAD BOOST : 0x40C68120 : 0xFFFFFFFA -->
+        <!-- CPU CORE 3 SCHED LOAD BOOST : 0x40C68130 : 0xFFFFFFFA -->
+        <!-- CPU Hispeed freq            : MPCTLV3_SCHEDUTIL_HISPEED_FREQ_CLUSTER_LITTLE(0x4143C100) : 940  -->
+        <!-- CPU Hispeed load            : MPCTLV3_SCHEDUTIL_HISPEED_LOAD_CLUSTER_LITTLE(0x41440100) : 0x5F -->
+        <!-- Sched group downmigrate     : MPCTLV3_SCHED_GROUP_DOWNMIGRATE(0x40C58000)               : 30   -->
+        <!-- Sched group Upmigrate       : MPCTLV3_SCHED_GROUP_UPMIGRATE(0x40C54000)                 : 35   -->
+        <!-- Sched downmigrate           : MPCTLV3_SCHED_DOWNMIGRATE(0x40C20000)                     : 30   -->
+        <!-- Sched Upmigrate             : MPCTLV3_SCHED_UPMIGRATE(0x40C1C000)                       : 35   -->
+        <!-- uclamp latency sensitivity  : MPCTLV3_CPUCTL_FG_UCLAMP_LATENCY_SENSITIVE(0x40CEC000)    : 0x1  -->
+        <!-- silver cluster min freq     : MPCTLV3_MIN_FREQ_CLUSTER_LITTLE_CORE_0(0x40800100)        : 940  -->
+        <!-- silver cluster max freq     : MPCTLV3_MAX_FREQ_CLUSTER_LITTLE_CORE_0(0x40804100)        : 1804 -->
+        <Config
+            Id="0x00001349" Enable="true" Timeout="0" Target="yupik"
+            Resources="0x40C68100, 0xFFFFFFFA, 0x40C68110, 0xFFFFFFFA, 0x40C68120, 0xFFFFFFFA,
+            0x40C68130, 0xFFFFFFFA, 0x4143C100, 940, 0x41440100, 0x5F, 0x40C58000, 30, 0x40C54000, 35,
+            0x40C20000, 30, 0x40C1C000, 35, 0x40CEC000, 0x1, 0x40800100, 940, 0x40804100, 1804"/>
+
+        <!-- POWER_HINT_ID_VIDEO_ENCODE_FHD_60FPS_HDR10 -->
+        <!-- Not Used in SM7325 -->
+        <!-- low power mode disable      : MPCTLV3_ALL_CPUS_PWR_CLPS_DIS(0x40400000) : 1 -->
+        <!-- gpu min lock                : MPCTLV3_GPU_MIN_POWER_LEVEL(0x42804000)   : 0x6(490Mhz) -->
+        <!-- CPU CORE 0 SCHED LOAD BOOST : 0x40C68100 : 0xFFFFFFFA -->
+        <!-- CPU CORE 1 SCHED LOAD BOOST : 0x40C68110 : 0xFFFFFFFA -->
+        <!-- CPU CORE 2 SCHED LOAD BOOST : 0x40C68120 : 0xFFFFFFFA -->
+        <!-- CPU CORE 3 SCHED LOAD BOOST : 0x40C68130 : 0xFFFFFFFA -->
+        <!-- CPU Hispeed freq            : MPCTLV3_SCHEDUTIL_HISPEED_FREQ_CLUSTER_LITTLE(0x4143C100) : 940  -->
+        <!-- CPU Hispeed load            : MPCTLV3_SCHEDUTIL_HISPEED_LOAD_CLUSTER_LITTLE(0x41440100) : 0x5F -->
+        <!-- Sched group downmigrate     : MPCTLV3_SCHED_GROUP_DOWNMIGRATE(0x40C58000)               : 40   -->
+        <!-- Sched group Upmigrate       : MPCTLV3_SCHED_GROUP_UPMIGRATE(0x40C54000)                 : 45   -->
+        <!-- Sched downmigrate           : MPCTLV3_SCHED_DOWNMIGRATE(0x40C20000)                     : 40   -->
+        <!-- Sched Upmigrate             : MPCTLV3_SCHED_UPMIGRATE(0x40C1C000)                       : 45   -->
+        <!-- uclamp latency sensitivity  : MPCTLV3_CPUCTL_FG_UCLAMP_LATENCY_SENSITIVE(0x40CEC000)    : 0x1  -->
+        <!-- silver cluster min freq     : MPCTLV3_MIN_FREQ_CLUSTER_LITTLE_CORE_0(0x40800100)        : 940  -->
+        <!-- silver cluster max freq     : MPCTLV3_MAX_FREQ_CLUSTER_LITTLE_CORE_0(0x40804100)        : 1804 -->
+        <Config
+            Id="0x0000134A" Enable="true" Timeout="0" Target="yupik"
+            Resources="0x40400000, 0x1, 0x42804000, 0x6, 0x40C68100, 0xFFFFFFFA,
+            0x40C68110, 0xFFFFFFFA, 0x40C68120, 0xFFFFFFFA, 0x40C68130, 0xFFFFFFFA,
+            0x4143C100, 940, 0x41440100, 0x5F, 0x40C58000, 40, 0x40C54000, 45,
+            0x40C20000, 40, 0x40C1C000, 45, 0x40CEC000, 0x1, 0x40800100, 940, 0x40804100, 1804"/>
+
+        <!-- POWER_HINT_ID_VIDEO_ENCODE_HYPER_LAPSE -->
+        <!-- CPU CORE 0 SCHED LOAD BOOST : 0x40C68100 : 0xFFFFFFFA -->
+        <!-- CPU CORE 1 SCHED LOAD BOOST : 0x40C68110 : 0xFFFFFFFA -->
+        <!-- CPU CORE 2 SCHED LOAD BOOST : 0x40C68120 : 0xFFFFFFFA -->
+        <!-- CPU CORE 3 SCHED LOAD BOOST : 0x40C68130 : 0xFFFFFFFA -->
+        <!-- CPU Hispeed freq            : MPCTLV3_SCHEDUTIL_HISPEED_FREQ_CLUSTER_LITTLE(0x4143C100) : 1324 -->
+        <!-- CPU Hispeed load            : MPCTLV3_SCHEDUTIL_HISPEED_LOAD_CLUSTER_LITTLE(0x41440100) : 0x5F -->
+        <!-- Sched group downmigrate     : MPCTLV3_SCHED_GROUP_DOWNMIGRATE(0x40C58000)               : 30   -->
+        <!-- Sched group Upmigrate       : MPCTLV3_SCHED_GROUP_UPMIGRATE(0x40C54000)                 : 35   -->
+        <!-- Sched downmigrate           : MPCTLV3_SCHED_DOWNMIGRATE(0x40C20000)                     : 30   -->
+        <!-- Sched Upmigrate             : MPCTLV3_SCHED_UPMIGRATE(0x40C1C000)                       : 35   -->
+        <!-- Sched prefer spread         : MPCTLV3_SCHED_PREFER_SPREAD(0x40CA8000)                   : 2    -->
+        <!-- uclamp latency sensitivity  : MPCTLV3_CPUCTL_FG_UCLAMP_LATENCY_SENSITIVE(0x40CEC000)    : 0x1  -->
+        <!-- silver cluster min freq     : MPCTLV3_MIN_FREQ_CLUSTER_LITTLE_CORE_0(0x40800100)        : 1324 -->
+        <Config
+            Id="0x0000134B" Enable="true" Timeout="0" Target="yupik"
+            Resources="0x40C68100, 0xFFFFFFFA, 0x40C68110, 0xFFFFFFFA, 0x40C68120, 0xFFFFFFFA,
+            0x40C68130, 0xFFFFFFFA, 0x4143C100, 1324, 0x41440100, 0x5F, 0x40C58000, 30, 0x40C54000, 35,
+            0x40C20000, 30, 0x40C1C000, 35, 0x40CA8000, 2, 0x40CEC000, 0x1, 0x40800100, 1324"/>
+
+        <!-- POWER_HINT_ID_VIDEO_ENCODE_FHD_30FPS_SUPER_STEADY -->
+        <!-- low power mode disable      : MPCTLV3_ALL_CPUS_PWR_CLPS_DIS(0x40400000) : 1 -->
+        <!-- CPU CORE 0 SCHED LOAD BOOST : 0x40C68100 : 0xFFFFFFFA -->
+        <!-- CPU CORE 1 SCHED LOAD BOOST : 0x40C68110 : 0xFFFFFFFA -->
+        <!-- CPU CORE 2 SCHED LOAD BOOST : 0x40C68120 : 0xFFFFFFFA -->
+        <!-- CPU CORE 3 SCHED LOAD BOOST : 0x40C68130 : 0xFFFFFFFA -->
+        <!-- CPU Hispeed freq            : MPCTLV3_SCHEDUTIL_HISPEED_FREQ_CLUSTER_LITTLE(0x4143C100) : 1324  -->
+        <!-- CPU Hispeed load            : MPCTLV3_SCHEDUTIL_HISPEED_LOAD_CLUSTER_LITTLE(0x41440100) : 0x5F -->
+        <!-- Sched group downmigrate     : MPCTLV3_SCHED_GROUP_DOWNMIGRATE(0x40C58000)               : 20   -->
+        <!-- Sched group Upmigrate       : MPCTLV3_SCHED_GROUP_UPMIGRATE(0x40C54000)                 : 25   -->
+        <!-- Sched downmigrate           : MPCTLV3_SCHED_DOWNMIGRATE(0x40C20000)                     : 20   -->
+        <!-- Sched Upmigrate             : MPCTLV3_SCHED_UPMIGRATE(0x40C1C000)                       : 25   -->
+        <!-- Sched prefer spread         : MPCTLV3_SCHED_PREFER_SPREAD(0x40CA8000)                   : 2    -->
+        <!-- uclamp latency sensitivity  : MPCTLV3_CPUCTL_FG_UCLAMP_LATENCY_SENSITIVE(0x40CEC000)    : 0x1  -->
+        <!-- silver cluster min freq     : MPCTLV3_MIN_FREQ_CLUSTER_LITTLE_CORE_0(0x40800100)        : 1324  -->
+        <!-- gold   cluster min freq     : MPCTLV3_MIN_FREQ_CLUSTER_BIG_CORE_0   (0x40800000)        : 1344 -->
+        <Config
+            Id="0x0000134C" Enable="true" Timeout="0" Target="yupik"
+            Resources="0x40400000, 1, 0x40C68100, 0xFFFFFFFA, 0x40C68110, 0xFFFFFFFA, 0x40C68120, 0xFFFFFFFA,
+            0x40C68130, 0xFFFFFFFA, 0x4143C100, 1324, 0x41440100, 0x5F, 0x40C58000, 20, 0x40C54000, 25,
+            0x40C20000, 20, 0x40C1C000, 25, 0x40CA8000, 2, 0x40CEC000, 0x1, 0x40800100, 1324, 0x40800000, 1344"/>
+
+        <!-- POWER_HINT_ID_VIDEO_ENCODE_FHD_60FPS_SUPER_STEADY -->
+        <!-- Not Used in SM7325 -->
+        <!-- low power mode disable      : MPCTLV3_ALL_CPUS_PWR_CLPS_DIS(0x40400000) : 1 -->
+        <!-- gpu min lock                : MPCTLV3_GPU_MIN_POWER_LEVEL(0x42804000)   : 0x6(490Mhz) -->
+        <!-- CPU CORE 0 SCHED LOAD BOOST : 0x40C68100 : 0xFFFFFFFA -->
+        <!-- CPU CORE 1 SCHED LOAD BOOST : 0x40C68110 : 0xFFFFFFFA -->
+        <!-- CPU CORE 2 SCHED LOAD BOOST : 0x40C68120 : 0xFFFFFFFA -->
+        <!-- CPU CORE 3 SCHED LOAD BOOST : 0x40C68130 : 0xFFFFFFFA -->
+        <!-- CPU Hispeed freq            : MPCTLV3_SCHEDUTIL_HISPEED_FREQ_CLUSTER_LITTLE(0x4143C100) : 940  -->
+        <!-- CPU Hispeed load            : MPCTLV3_SCHEDUTIL_HISPEED_LOAD_CLUSTER_LITTLE(0x41440100) : 0x5F -->
+        <!-- Sched group downmigrate     : MPCTLV3_SCHED_GROUP_DOWNMIGRATE(0x40C58000)               : 30   -->
+        <!-- Sched group Upmigrate       : MPCTLV3_SCHED_GROUP_UPMIGRATE(0x40C54000)                 : 35   -->
+        <!-- Sched downmigrate           : MPCTLV3_SCHED_DOWNMIGRATE(0x40C20000)                     : 30   -->
+        <!-- Sched Upmigrate             : MPCTLV3_SCHED_UPMIGRATE(0x40C1C000)                       : 35   -->
+        <!-- uclamp latency sensitivity  : MPCTLV3_CPUCTL_FG_UCLAMP_LATENCY_SENSITIVE(0x40CEC000)    : 0x1  -->
+        <!-- silver cluster min freq     : MPCTLV3_MIN_FREQ_CLUSTER_LITTLE_CORE_0(0x40800100)        : 940  -->
+        <!-- silver cluster max freq     : MPCTLV3_MAX_FREQ_CLUSTER_LITTLE_CORE_0(0x40804100)        : 1804 -->
+        <Config
+            Id="0x0000134D" Enable="true" Timeout="0" Target="yupik"
+            Resources="0x40C68100, 0xFFFFFFFA, 0x40C68110, 0xFFFFFFFA, 0x40C68120, 0xFFFFFFFA,
+            0x40C68130, 0xFFFFFFFA, 0x4143C100, 940, 0x41440100, 0x5F, 0x40C58000, 30, 0x40C54000, 35,
+            0x40C20000, 30, 0x40C1C000, 35, 0x40CEC000, 0x1, 0x40800100, 940, 0x40804100, 1804"/>
+
+        <!-- POWER_HINT_ID_VIDEO_ENCODE_TRACKING_ZOOM -->
+        <!-- Not Used in SM7325 -->
+        <!-- CPU CORE 0 SCHED LOAD BOOST : 0x40C68100 : 0xFFFFFFFA -->
+        <!-- CPU CORE 1 SCHED LOAD BOOST : 0x40C68110 : 0xFFFFFFFA -->
+        <!-- CPU CORE 2 SCHED LOAD BOOST : 0x40C68120 : 0xFFFFFFFA -->
+        <!-- CPU CORE 3 SCHED LOAD BOOST : 0x40C68130 : 0xFFFFFFFA -->
+        <!-- CPU Hispeed freq            : MPCTLV3_SCHEDUTIL_HISPEED_FREQ_CLUSTER_LITTLE(0x4143C100) : 940  -->
+        <!-- CPU Hispeed load            : MPCTLV3_SCHEDUTIL_HISPEED_LOAD_CLUSTER_LITTLE(0x41440100) : 0x5F -->
+        <!-- Sched group downmigrate     : MPCTLV3_SCHED_GROUP_DOWNMIGRATE(0x40C58000)               : 40   -->
+        <!-- Sched group Upmigrate       : MPCTLV3_SCHED_GROUP_UPMIGRATE(0x40C54000)                 : 45   -->
+        <!-- Sched downmigrate           : MPCTLV3_SCHED_DOWNMIGRATE(0x40C20000)                     : 40   -->
+        <!-- Sched Upmigrate             : MPCTLV3_SCHED_UPMIGRATE(0x40C1C000)                       : 45   -->
+        <!-- uclamp latency sensitivity  : MPCTLV3_CPUCTL_FG_UCLAMP_LATENCY_SENSITIVE(0x40CEC000)    : 0x1  -->
+        <!-- silver cluster min freq     : MPCTLV3_MIN_FREQ_CLUSTER_LITTLE_CORE_0(0x40800100)        : 940  -->
+        <!-- silver cluster max freq     : MPCTLV3_MAX_FREQ_CLUSTER_LITTLE_CORE_0(0x40804100)        : 1804 -->
+        <Config
+            Id="0x0000134E" Enable="true" Timeout="0" Target="yupik"
+            Resources="0x40C68100, 0xFFFFFFFA, 0x40C68110, 0xFFFFFFFA, 0x40C68120, 0xFFFFFFFA,
+            0x40C68130, 0xFFFFFFFA, 0x4143C100, 940, 0x41440100, 0x5F, 0x40C58000, 40, 0x40C54000, 45,
+            0x40C20000, 40, 0x40C1C000, 45, 0x40CEC000, 0x1, 0x40800100, 940, 0x40804100, 1804"/>
+
+        <!-- POWER_HINT_ID_VIDEO_ENCODE_LIVE_FOCUS_VIDEO -->
+        <!-- Not Used in SM7325 -->
+        <!-- CPU CORE 0 SCHED LOAD BOOST : 0x40C68100 : 0xFFFFFFFA -->
+        <!-- CPU CORE 1 SCHED LOAD BOOST : 0x40C68110 : 0xFFFFFFFA -->
+        <!-- CPU CORE 2 SCHED LOAD BOOST : 0x40C68120 : 0xFFFFFFFA -->
+        <!-- CPU CORE 3 SCHED LOAD BOOST : 0x40C68130 : 0xFFFFFFFA -->
+        <!-- CPU Hispeed freq            : MPCTLV3_SCHEDUTIL_HISPEED_FREQ_CLUSTER_LITTLE(0x4143C100) : 940  -->
+        <!-- CPU Hispeed load            : MPCTLV3_SCHEDUTIL_HISPEED_LOAD_CLUSTER_LITTLE(0x41440100) : 0x5F -->
+        <!-- Sched group downmigrate     : MPCTLV3_SCHED_GROUP_DOWNMIGRATE(0x40C58000)               : 30   -->
+        <!-- Sched group Upmigrate       : MPCTLV3_SCHED_GROUP_UPMIGRATE(0x40C54000)                 : 35   -->
+        <!-- Sched downmigrate           : MPCTLV3_SCHED_DOWNMIGRATE(0x40C20000)                     : 30   -->
+        <!-- Sched Upmigrate             : MPCTLV3_SCHED_UPMIGRATE(0x40C1C000)                       : 35   -->
+        <!-- uclamp latency sensitivity  : MPCTLV3_CPUCTL_FG_UCLAMP_LATENCY_SENSITIVE(0x40CEC000)    : 0x1  -->
+        <!-- silver cluster min freq     : MPCTLV3_MIN_FREQ_CLUSTER_LITTLE_CORE_0(0x40800100)        : 940  -->
+        <!-- silver cluster max freq     : MPCTLV3_MAX_FREQ_CLUSTER_LITTLE_CORE_0(0x40804100)        : 1804 -->
+        <Config
+            Id="0x0000134F" Enable="true" Timeout="0" Target="yupik"
+            Resources="0x40C68100, 0xFFFFFFFA, 0x40C68110, 0xFFFFFFFA, 0x40C68120, 0xFFFFFFFA,
+            0x40C68130, 0xFFFFFFFA, 0x4143C100, 940, 0x41440100, 0x5F, 0x40C58000, 30, 0x40C54000, 35,
+            0x40C20000, 30, 0x40C1C000, 35, 0x40CEC000, 0x1, 0x40800100, 940, 0x40804100, 1804"/>
+
+        <!-- POWER_HINT_ID_VIDEO_ENCODE_DIRECTORS_VIEW -->
+        <!-- Not Used in SM7325 -->
+        <!-- CPU CORE 0 SCHED LOAD BOOST : 0x40C68100 : 0xFFFFFFFA -->
+        <!-- CPU CORE 1 SCHED LOAD BOOST : 0x40C68110 : 0xFFFFFFFA -->
+        <!-- CPU CORE 2 SCHED LOAD BOOST : 0x40C68120 : 0xFFFFFFFA -->
+        <!-- CPU CORE 3 SCHED LOAD BOOST : 0x40C68130 : 0xFFFFFFFA -->
+        <!-- CPU Hispeed freq            : MPCTLV3_SCHEDUTIL_HISPEED_FREQ_CLUSTER_LITTLE(0x4143C100) : 940  -->
+        <!-- CPU Hispeed load            : MPCTLV3_SCHEDUTIL_HISPEED_LOAD_CLUSTER_LITTLE(0x41440100) : 0x5F -->
+        <!-- Sched group downmigrate     : MPCTLV3_SCHED_GROUP_DOWNMIGRATE(0x40C58000)               : 30   -->
+        <!-- Sched group Upmigrate       : MPCTLV3_SCHED_GROUP_UPMIGRATE(0x40C54000)                 : 35   -->
+        <!-- Sched downmigrate           : MPCTLV3_SCHED_DOWNMIGRATE(0x40C20000)                     : 30   -->
+        <!-- Sched Upmigrate             : MPCTLV3_SCHED_UPMIGRATE(0x40C1C000)                       : 35   -->
+        <!-- uclamp latency sensitivity  : MPCTLV3_CPUCTL_FG_UCLAMP_LATENCY_SENSITIVE(0x40CEC000)    : 0x1  -->
+        <!-- silver cluster min freq     : MPCTLV3_MIN_FREQ_CLUSTER_LITTLE_CORE_0(0x40800100)        : 940  -->
+        <!-- silver cluster max freq     : MPCTLV3_MAX_FREQ_CLUSTER_LITTLE_CORE_0(0x40804100)        : 1804 -->
+        <Config
+            Id="0x00001350" Enable="true" Timeout="0" Target="yupik"
+            Resources="0x40C68100, 0xFFFFFFFA, 0x40C68110, 0xFFFFFFFA, 0x40C68120, 0xFFFFFFFA,
+            0x40C68130, 0xFFFFFFFA, 0x4143C100, 940, 0x41440100, 0x5F, 0x40C58000, 30, 0x40C54000, 35,
+            0x40C20000, 30, 0x40C1C000, 35, 0x40CEC000, 0x1, 0x40800100, 940, 0x40804100, 1804"/>
+
+        <!-- POWER_HINT_ID_VIDEO_ENCODE_AR_DOODLE -->
+        <!-- CPU CORE 0 SCHED LOAD BOOST : 0x40C68100 : 0xFFFFFFFA -->
+        <!-- CPU CORE 1 SCHED LOAD BOOST : 0x40C68110 : 0xFFFFFFFA -->
+        <!-- CPU CORE 2 SCHED LOAD BOOST : 0x40C68120 : 0xFFFFFFFA -->
+        <!-- CPU CORE 3 SCHED LOAD BOOST : 0x40C68130 : 0xFFFFFFFA -->
+        <!-- CPU Hispeed freq            : MPCTLV3_SCHEDUTIL_HISPEED_FREQ_CLUSTER_LITTLE(0x4143C100) : 940  -->
+        <!-- CPU Hispeed load            : MPCTLV3_SCHEDUTIL_HISPEED_LOAD_CLUSTER_LITTLE(0x41440100) : 0x5F -->
+        <!-- Sched group downmigrate     : MPCTLV3_SCHED_GROUP_DOWNMIGRATE(0x40C58000)               : 40   -->
+        <!-- Sched group Upmigrate       : MPCTLV3_SCHED_GROUP_UPMIGRATE(0x40C54000)                 : 45   -->
+        <!-- Sched downmigrate           : MPCTLV3_SCHED_DOWNMIGRATE(0x40C20000)                     : 40   -->
+        <!-- Sched Upmigrate             : MPCTLV3_SCHED_UPMIGRATE(0x40C1C000)                       : 45   -->
+        <!-- uclamp latency sensitivity  : MPCTLV3_CPUCTL_FG_UCLAMP_LATENCY_SENSITIVE(0x40CEC000)    : 0x1  -->
+        <!-- silver cluster min freq     : MPCTLV3_MIN_FREQ_CLUSTER_LITTLE_CORE_0(0x40800100)        : 940  -->
+        <!-- silver cluster max freq     : MPCTLV3_MAX_FREQ_CLUSTER_LITTLE_CORE_0(0x40804100)        : 1804 -->
+        <Config
+            Id="0x00001351" Enable="true" Timeout="0" Target="yupik"
+            Resources="0x40C68100, 0xFFFFFFFA, 0x40C68110, 0xFFFFFFFA, 0x40C68120, 0xFFFFFFFA,
+            0x40C68130, 0xFFFFFFFA, 0x4143C100, 940, 0x41440100, 0x5F, 0x40C58000, 40, 0x40C54000, 45,
+            0x40C20000, 40, 0x40C1C000, 45, 0x40CEC000, 0x1, 0x40800100, 940, 0x40804100, 1804"/>
+
+        <!-- POWER_HINT_ID_VIDEO_ENCODE_FHD_30FPS_FULL -->
+        <!-- CPU CORE 0 SCHED LOAD BOOST : 0x40C68100 : 0xFFFFFFFA -->
+        <!-- CPU CORE 1 SCHED LOAD BOOST : 0x40C68110 : 0xFFFFFFFA -->
+        <!-- CPU CORE 2 SCHED LOAD BOOST : 0x40C68120 : 0xFFFFFFFA -->
+        <!-- CPU CORE 3 SCHED LOAD BOOST : 0x40C68130 : 0xFFFFFFFA -->
+        <!-- CPU Hispeed freq            : MPCTLV3_SCHEDUTIL_HISPEED_FREQ_CLUSTER_LITTLE(0x4143C100) : 1324 -->
+        <!-- CPU Hispeed load            : MPCTLV3_SCHEDUTIL_HISPEED_LOAD_CLUSTER_LITTLE(0x41440100) : 0x5F -->
+        <!-- Sched group downmigrate     : MPCTLV3_SCHED_GROUP_DOWNMIGRATE(0x40C58000)               : 20   -->
+        <!-- Sched group Upmigrate       : MPCTLV3_SCHED_GROUP_UPMIGRATE(0x40C54000)                 : 25   -->
+        <!-- Sched downmigrate           : MPCTLV3_SCHED_DOWNMIGRATE(0x40C20000)                     : 20   -->
+        <!-- Sched Upmigrate             : MPCTLV3_SCHED_UPMIGRATE(0x40C1C000)                       : 25   -->
+        <!-- Sched prefer spread         : MPCTLV3_SCHED_PREFER_SPREAD(0x40CA8000)                   : 2    -->
+        <!-- uclamp latency sensitivity  : MPCTLV3_CPUCTL_FG_UCLAMP_LATENCY_SENSITIVE(0x40CEC000)    : 0x1  -->
+        <!-- silver cluster min freq     : MPCTLV3_MIN_FREQ_CLUSTER_LITTLE_CORE_0(0x40800100)        : 1324 -->
+        <!-- gold   cluster min freq     : MPCTLV3_MIN_FREQ_CLUSTER_BIG_CORE_0   (0x40800000)        : 1344 -->
+        <Config
+            Id="0x00001352" Enable="true" Timeout="0" Target="yupik"
+            Resources="0x40C68100, 0xFFFFFFFA, 0x40C68110, 0xFFFFFFFA, 0x40C68120, 0xFFFFFFFA,
+            0x40C68130, 0xFFFFFFFA, 0x4143C100, 1324, 0x41440100, 0x5F, 0x40C58000, 20,
+            0x40C54000, 25, 0x40C20000, 20, 0x40C1C000, 25, 0x40CA8000, 2, 0x40CEC000, 0x1,
+            0x40800100, 1324, 0x40800000, 1344"/>
+
+        <!-- POWER_HINT_ID_PERF_PHOTO_PREVIEW -->
+        <!-- CPU CORE 0 SCHED LOAD BOOST : 0x40C68100 : 0xFFFFFFFA -->
+        <!-- CPU CORE 1 SCHED LOAD BOOST : 0x40C68110 : 0xFFFFFFFA -->
+        <!-- CPU CORE 2 SCHED LOAD BOOST : 0x40C68120 : 0xFFFFFFFA -->
+        <!-- CPU CORE 3 SCHED LOAD BOOST : 0x40C68130 : 0xFFFFFFFA -->
+        <!-- CPU Hispeed freq            : MPCTLV3_SCHEDUTIL_HISPEED_FREQ_CLUSTER_LITTLE(0x4143C100) : 1324 -->
+        <!-- CPU Hispeed load            : MPCTLV3_SCHEDUTIL_HISPEED_LOAD_CLUSTER_LITTLE(0x41440100) : 0x5F -->
+        <!-- Sched group downmigrate     : MPCTLV3_SCHED_GROUP_DOWNMIGRATE(0x40C58000)               : 30   -->
+        <!-- Sched group Upmigrate       : MPCTLV3_SCHED_GROUP_UPMIGRATE(0x40C54000)                 : 35   -->
+        <!-- Sched downmigrate           : MPCTLV3_SCHED_DOWNMIGRATE(0x40C20000)                     : 30   -->
+        <!-- Sched Upmigrate             : MPCTLV3_SCHED_UPMIGRATE(0x40C1C000)                       : 35   -->
+        <!-- Sched prefer spread         : MPCTLV3_SCHED_PREFER_SPREAD(0x40CA8000)                   : 2    -->
+        <!-- uclamp latency sensitivity  : MPCTLV3_CPUCTL_FG_UCLAMP_LATENCY_SENSITIVE(0x40CEC000)    : 0x1  -->
+        <!-- silver cluster min freq     : MPCTLV3_MIN_FREQ_CLUSTER_LITTLE_CORE_0(0x40800100)        : 1324 -->
+        <!-- silver cluster max freq     : MPCTLV3_MAX_FREQ_CLUSTER_LITTLE_CORE_0(0x40804100)        : 1804 -->
+        <Config
+            Id="0x00001353" Enable="true" Timeout="0" Target="yupik"
+            Resources="0x40C68100, 0xFFFFFFFA, 0x40C68110, 0xFFFFFFFA, 0x40C68120, 0xFFFFFFFA,
+            0x40C68130, 0xFFFFFFFA, 0x4143C100, 1324, 0x41440100, 0x5F, 0x40C58000, 30, 0x40C54000, 35,
+            0x40C20000, 30, 0x40C1C000, 35, 0x40CA8000, 2, 0x40CEC000, 0x1, 0x40800100, 1324, 0x40804100, 1804"/>
+
+        <!-- POWER_HINT_ID_PERF_PHOTO_SUPER_NIGHT -->
+        <!-- CPU CORE 0 SCHED LOAD BOOST : 0x40C68100 : 0xFFFFFFFA -->
+        <!-- CPU CORE 1 SCHED LOAD BOOST : 0x40C68110 : 0xFFFFFFFA -->
+        <!-- CPU CORE 2 SCHED LOAD BOOST : 0x40C68120 : 0xFFFFFFFA -->
+        <!-- CPU CORE 3 SCHED LOAD BOOST : 0x40C68130 : 0xFFFFFFFA -->
+        <!-- CPU Hispeed freq            : MPCTLV3_SCHEDUTIL_HISPEED_FREQ_CLUSTER_LITTLE(0x4143C100) : 1324 -->
+        <!-- CPU Hispeed load            : MPCTLV3_SCHEDUTIL_HISPEED_LOAD_CLUSTER_LITTLE(0x41440100) : 0x5F -->
+        <!-- Sched group downmigrate     : MPCTLV3_SCHED_GROUP_DOWNMIGRATE(0x40C58000)               : 30   -->
+        <!-- Sched group Upmigrate       : MPCTLV3_SCHED_GROUP_UPMIGRATE(0x40C54000)                 : 35   -->
+        <!-- Sched downmigrate           : MPCTLV3_SCHED_DOWNMIGRATE(0x40C20000)                     : 30   -->
+        <!-- Sched Upmigrate             : MPCTLV3_SCHED_UPMIGRATE(0x40C1C000)                       : 35   -->
+        <!-- Sched prefer spread         : MPCTLV3_SCHED_PREFER_SPREAD(0x40CA8000)                   : 2    -->
+        <!-- uclamp latency sensitivity  : MPCTLV3_CPUCTL_FG_UCLAMP_LATENCY_SENSITIVE(0x40CEC000)    : 0x1  -->
+        <!-- silver cluster min freq     : MPCTLV3_MIN_FREQ_CLUSTER_LITTLE_CORE_0(0x40800100)        : 1324 -->
+        <!-- silver cluster max freq     : MPCTLV3_MAX_FREQ_CLUSTER_LITTLE_CORE_0(0x40804100)        : 1804 -->
+        <Config
+            Id="0x00001354" Enable="true" Timeout="0" Target="yupik"
+            Resources="0x40C68100, 0xFFFFFFFA, 0x40C68110, 0xFFFFFFFA, 0x40C68120, 0xFFFFFFFA,
+            0x40C68130, 0xFFFFFFFA, 0x4143C100, 1324, 0x41440100, 0x5F, 0x40C58000, 30, 0x40C54000, 35,
+            0x40C20000, 30, 0x40C1C000, 35, 0x40CA8000, 2, 0x40CEC000, 0x1, 0x40800100, 1324, 0x40804100, 1804"/>
+
+        <!-- POWER_HINT_ID_PERF_VT_CALL -->
+        <!-- silver cluster min freq     : MPCTLV3_MIN_FREQ_CLUSTER_LITTLE_CORE_0(0x40800100)        : 691  -->
+        <Config
+            Id="0x00001357" Enable="true" Timeout="0" Target="yupik"
+            Resources="0x40800100, 691"/>
+
+        <!-- POWER_HINT_ID_PERF_CTS -->
+        <!-- CPU CORE 0 SCHED LOAD BOOST : 0x40C68100 : 0xFFFFFFFA -->
+        <!-- CPU CORE 1 SCHED LOAD BOOST : 0x40C68110 : 0xFFFFFFFA -->
+        <!-- CPU CORE 2 SCHED LOAD BOOST : 0x40C68120 : 0xFFFFFFFA -->
+        <!-- CPU CORE 3 SCHED LOAD BOOST : 0x40C68130 : 0xFFFFFFFA -->
+        <!-- CPU Hispeed freq            : MPCTLV3_SCHEDUTIL_HISPEED_FREQ_CLUSTER_LITTLE(0x4143C100) : 940  -->
+        <!-- CPU Hispeed load            : MPCTLV3_SCHEDUTIL_HISPEED_LOAD_CLUSTER_LITTLE(0x41440100) : 0x5F -->
+        <!-- Sched group downmigrate     : MPCTLV3_SCHED_GROUP_DOWNMIGRATE(0x40C58000)               : 40   -->
+        <!-- Sched group Upmigrate       : MPCTLV3_SCHED_GROUP_UPMIGRATE(0x40C54000)                 : 45   -->
+        <!-- Sched downmigrate           : MPCTLV3_SCHED_DOWNMIGRATE(0x40C20000)                     : 40   -->
+        <!-- Sched Upmigrate             : MPCTLV3_SCHED_UPMIGRATE(0x40C1C000)                       : 45   -->
+        <!-- uclamp latency sensitivity  : MPCTLV3_CPUCTL_FG_UCLAMP_LATENCY_SENSITIVE(0x40CEC000)    : 0x1  -->
+        <!-- silver cluster min freq     : MPCTLV3_MIN_FREQ_CLUSTER_LITTLE_CORE_0(0x40800100)        : 1516 -->
+        <Config
+            Id="0x00001358" Enable="true" Timeout="0" Target="yupik"
+            Resources="0x40C68100, 0xFFFFFFFA, 0x40C68110, 0xFFFFFFFA, 0x40C68120, 0xFFFFFFFA,
+            0x40C68130, 0xFFFFFFFA, 0x4143C100, 940, 0x41440100, 0x5F, 0x40C58000, 40, 0x40C54000, 45,
+            0x40C20000, 40, 0x40C1C000, 45, 0x40CEC000, 0x1, 0x40800100, 1516"/>
+
+        <!-- POWER_HINT_ID_LIVE_FOCUS -->
+        <!-- CPU CORE 0 SCHED LOAD BOOST : 0x40C68100 : 0xFFFFFFFA -->
+        <!-- CPU CORE 1 SCHED LOAD BOOST : 0x40C68110 : 0xFFFFFFFA -->
+        <!-- CPU CORE 2 SCHED LOAD BOOST : 0x40C68120 : 0xFFFFFFFA -->
+        <!-- CPU CORE 3 SCHED LOAD BOOST : 0x40C68130 : 0xFFFFFFFA -->
+        <!-- CPU Hispeed freq            : MPCTLV3_SCHEDUTIL_HISPEED_FREQ_CLUSTER_LITTLE(0x4143C100) : 940  -->
+        <!-- CPU Hispeed load            : MPCTLV3_SCHEDUTIL_HISPEED_LOAD_CLUSTER_LITTLE(0x41440100) : 0x5F -->
+        <!-- Sched group downmigrate     : MPCTLV3_SCHED_GROUP_DOWNMIGRATE(0x40C58000)               : 40   -->
+        <!-- Sched group Upmigrate       : MPCTLV3_SCHED_GROUP_UPMIGRATE(0x40C54000)                 : 45   -->
+        <!-- Sched downmigrate           : MPCTLV3_SCHED_DOWNMIGRATE(0x40C20000)                     : 40   -->
+        <!-- Sched Upmigrate             : MPCTLV3_SCHED_UPMIGRATE(0x40C1C000)                       : 45   -->
+        <!-- uclamp latency sensitivity  : MPCTLV3_CPUCTL_FG_UCLAMP_LATENCY_SENSITIVE(0x40CEC000)    : 0x1  -->
+        <!-- silver cluster min freq     : MPCTLV3_MIN_FREQ_CLUSTER_LITTLE_CORE_0(0x40800100)        : 940  -->
+        <Config
+            Id="0x00001359" Enable="true" Timeout="0" Target="yupik"
+            Resources="0x40C68100, 0xFFFFFFFA, 0x40C68110, 0xFFFFFFFA, 0x40C68120, 0xFFFFFFFA,
+            0x40C68130, 0xFFFFFFFA, 0x4143C100, 940, 0x41440100, 0x5F, 0x40C58000, 40, 0x40C54000, 45,
+            0x40C20000, 40, 0x40C1C000, 45, 0x40CEC000, 0x1, 0x40800100, 940"/>
+
+    </Powerhint>
+</HintConfigs>

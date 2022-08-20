@@ -1,0 +1,6 @@
+{
+    "model_name": "a52xq",
+    "services": [
+        {"name": "CARRYING_DETECTION"}
+    ]
+}

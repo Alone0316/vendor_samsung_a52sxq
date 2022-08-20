@@ -1,0 +1,9 @@
+{
+	"version_id": "v6",
+	"tag" : "6.12",
+	"model_type" : "dsp",
+	"precision" : "qasymm8",
+	"complier" : "snpe1.50.2.2672_sm7325_htp",
+	"latency": "0",
+	"model_path" : "/vendor/etc/saiv/image_understanding/db/aic_classifier/aic_classifier_cnn.dlc"
+}
