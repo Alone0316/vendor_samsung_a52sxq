@@ -656,8 +656,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/a52sxq/proprietary/vendor/etc/media_yupik_v0/video_system_specs.json:$(TARGET_COPY_OUT_VENDOR)/etc/media_yupik_v0/video_system_specs.json \
     vendor/samsung/a52sxq/proprietary/vendor/etc/media_yupik_v1/video_system_specs.json:$(TARGET_COPY_OUT_VENDOR)/etc/media_yupik_v1/video_system_specs.json \
     vendor/samsung/a52sxq/proprietary/vendor/etc/mercury.json:$(TARGET_COPY_OUT_VENDOR)/etc/mercury.json \
-    vendor/samsung/a52sxq/proprietary/vendor/etc/midas/SRIBMidas_aiBLURDETECT_Stage1_FP32_V130.caffemodel:$(TARGET_COPY_OUT_VENDOR)/etc/midas/SRIBMidas_aiBLURDETECT_Stage1_FP32_V130.caffemodel \
-    vendor/samsung/a52sxq/proprietary/vendor/etc/midas/SRIBMidas_aiBLURDETECT_Stage2_FP32_V130.caffemodel:$(TARGET_COPY_OUT_VENDOR)/etc/midas/SRIBMidas_aiBLURDETECT_Stage2_FP32_V130.caffemodel \
     vendor/samsung/a52sxq/proprietary/vendor/etc/midas/SRIBMidas_aiDEBLUR_INT16_V0132_sm7325_snpe1502.dlc:$(TARGET_COPY_OUT_VENDOR)/etc/midas/SRIBMidas_aiDEBLUR_INT16_V0132_sm7325_snpe1502.dlc \
     vendor/samsung/a52sxq/proprietary/vendor/etc/midas/SRIBMidas_aiDENOISE_FP16_V900.caffemodel:$(TARGET_COPY_OUT_VENDOR)/etc/midas/SRIBMidas_aiDENOISE_FP16_V900.caffemodel \
     vendor/samsung/a52sxq/proprietary/vendor/etc/midas/SRIBMidas_aiHDR_Global_INT16_V430_sm7325_snpe1502.dlc:$(TARGET_COPY_OUT_VENDOR)/etc/midas/SRIBMidas_aiHDR_Global_INT16_V430_sm7325_snpe1502.dlc \
