@@ -901,9 +901,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/a52sxq/proprietary/vendor/etc/traceconfig.txt:$(TARGET_COPY_OUT_VENDOR)/etc/traceconfig.txt \
     vendor/samsung/a52sxq/proprietary/vendor/etc/usb_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/usb_audio_policy_configuration.xml \
     vendor/samsung/a52sxq/proprietary/vendor/etc/video_system_specs.json:$(TARGET_COPY_OUT_VENDOR)/etc/video_system_specs.json \
-    vendor/samsung/a52sxq/proprietary/vendor/etc/vintf/manifest_lahaina.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest_lahaina.xml \
-    vendor/samsung/a52sxq/proprietary/vendor/etc/vintf/manifest_shima.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest_shima.xml \
-    vendor/samsung/a52sxq/proprietary/vendor/etc/vintf/manifest_yupik.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest_yupik.xml \
     vendor/samsung/a52sxq/proprietary/vendor/etc/vmmgr.conf:$(TARGET_COPY_OUT_VENDOR)/etc/vmmgr.conf \
     vendor/samsung/a52sxq/proprietary/vendor/etc/vramdiskd.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vramdiskd.xml \
     vendor/samsung/a52sxq/proprietary/vendor/etc/wifi/aoa_cldb_falcon.bin:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/aoa_cldb_falcon.bin \
