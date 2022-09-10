@@ -156,15 +156,6 @@ prebuilt_etc_xml {
 }
 
 prebuilt_etc_xml {
-	name: "engmode_manifest",
-	owner: "samsung",
-	src: "proprietary/vendor/etc/vintf/manifest/engmode_manifest.xml",
-	filename_from_src: true,
-	sub_dir: "vintf/manifest",
-	soc_specific: true,
-}
-
-prebuilt_etc_xml {
 	name: "hyper-default-sec",
 	owner: "samsung",
 	src: "proprietary/vendor/etc/vintf/manifest/hyper-default-sec.xml",
@@ -201,15 +192,6 @@ prebuilt_etc_xml {
 }
 
 prebuilt_etc_xml {
-	name: "mppserver",
-	owner: "samsung",
-	src: "proprietary/vendor/etc/vintf/manifest/mppserver.xml",
-	filename_from_src: true,
-	sub_dir: "vintf/manifest",
-	soc_specific: true,
-}
-
-prebuilt_etc_xml {
 	name: "power-samsung",
 	owner: "samsung",
 	src: "proprietary/vendor/etc/vintf/manifest/power-samsung.xml",
@@ -231,15 +213,6 @@ prebuilt_etc_xml {
 	name: "sec_c2_manifest_default0",
 	owner: "samsung",
 	src: "proprietary/vendor/etc/vintf/manifest/sec_c2_manifest_default0.xml",
-	filename_from_src: true,
-	sub_dir: "vintf/manifest",
-	soc_specific: true,
-}
-
-prebuilt_etc_xml {
-	name: "vaultkeeper_manifest",
-	owner: "samsung",
-	src: "proprietary/vendor/etc/vintf/manifest/vaultkeeper_manifest.xml",
 	filename_from_src: true,
 	sub_dir: "vintf/manifest",
 	soc_specific: true,
@@ -273,15 +246,6 @@ prebuilt_etc_xml {
 }
 
 prebuilt_etc_xml {
-	name: "vendor.samsung.hardware.authfw@1.0-manifest",
-	owner: "samsung",
-	src: "proprietary/vendor/etc/vintf/manifest/vendor.samsung.hardware.authfw@1.0-manifest.xml",
-	filename_from_src: true,
-	sub_dir: "vintf/manifest",
-	soc_specific: true,
-}
-
-prebuilt_etc_xml {
 	name: "vendor.samsung.hardware.hqm@1.0-manifest",
 	owner: "samsung",
 	src: "proprietary/vendor/etc/vintf/manifest/vendor.samsung.hardware.hqm@1.0-manifest.xml",
@@ -294,33 +258,6 @@ prebuilt_etc_xml {
 	name: "vendor.samsung.hardware.thermal@1.0-manifest",
 	owner: "samsung",
 	src: "proprietary/vendor/etc/vintf/manifest/vendor.samsung.hardware.thermal@1.0-manifest.xml",
-	filename_from_src: true,
-	sub_dir: "vintf/manifest",
-	soc_specific: true,
-}
-
-prebuilt_etc_xml {
-	name: "vendor.samsung.hardware.tlc.hdm@1.1-manifest",
-	owner: "samsung",
-	src: "proprietary/vendor/etc/vintf/manifest/vendor.samsung.hardware.tlc.hdm@1.1-manifest.xml",
-	filename_from_src: true,
-	sub_dir: "vintf/manifest",
-	soc_specific: true,
-}
-
-prebuilt_etc_xml {
-	name: "vendor.samsung.hardware.tlc.iccc@1.0-manifest",
-	owner: "samsung",
-	src: "proprietary/vendor/etc/vintf/manifest/vendor.samsung.hardware.tlc.iccc@1.0-manifest.xml",
-	filename_from_src: true,
-	sub_dir: "vintf/manifest",
-	soc_specific: true,
-}
-
-prebuilt_etc_xml {
-	name: "vendor.samsung.hardware.tlc.kg@1.0-manifest",
-	owner: "samsung",
-	src: "proprietary/vendor/etc/vintf/manifest/vendor.samsung.hardware.tlc.kg@1.0-manifest.xml",
 	filename_from_src: true,
 	sub_dir: "vintf/manifest",
 	soc_specific: true,
