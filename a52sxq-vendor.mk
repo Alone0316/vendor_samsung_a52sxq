@@ -218,7 +218,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/a52sxq/proprietary/vendor/bin/hw/android.hardware.identity-service-qti:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.identity-service-qti \
     vendor/samsung/a52sxq/proprietary/vendor/bin/hw/android.hardware.media.omx@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.media.omx@1.0-service \
     vendor/samsung/a52sxq/proprietary/vendor/bin/hw/android.hardware.power.samsung-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.power.samsung-service \
-    vendor/samsung/a52sxq/proprietary/vendor/bin/hw/android.hardware.sensors@2.0-service.multihal:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.sensors@2.0-service.multihal \
     vendor/samsung/a52sxq/proprietary/vendor/bin/hw/android.hardware.wifi@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.wifi@1.0-service \
     vendor/samsung/a52sxq/proprietary/vendor/bin/hw/capabilityconfigstoretest:$(TARGET_COPY_OUT_VENDOR)/bin/hw/capabilityconfigstoretest \
     vendor/samsung/a52sxq/proprietary/vendor/bin/hw/hostapd:$(TARGET_COPY_OUT_VENDOR)/bin/hw/hostapd \
@@ -349,7 +348,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/a52sxq/proprietary/vendor/etc/init/android.hardware.health@2.1-service-samsung.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.health@2.1-service-samsung.rc \
     vendor/samsung/a52sxq/proprietary/vendor/etc/init/android.hardware.identity-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.identity-service-qti.rc \
     vendor/samsung/a52sxq/proprietary/vendor/etc/init/android.hardware.media.omx@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.media.omx@1.0-service.rc \
-    vendor/samsung/a52sxq/proprietary/vendor/etc/init/android.hardware.sensors@2.0-service-multihal.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.sensors@2.0-service-multihal.rc \
     vendor/samsung/a52sxq/proprietary/vendor/etc/init/android.hardware.wifi.supplicant-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.wifi.supplicant-service.rc \
     vendor/samsung/a52sxq/proprietary/vendor/etc/init/android.hardware.wifi@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.wifi@1.0-service.rc \
     vendor/samsung/a52sxq/proprietary/vendor/etc/init/camera.unihal.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/camera.unihal.rc \
@@ -562,7 +560,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/a52sxq/proprietary/vendor/etc/sensors/config/sns_tilt_sw_enabled.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_tilt_sw_enabled.json \
     vendor/samsung/a52sxq/proprietary/vendor/etc/sensors/config/sns_tilt_to_wake.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_tilt_to_wake.json \
     vendor/samsung/a52sxq/proprietary/vendor/etc/sensors/config/sns_wrist_pedo.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_wrist_pedo.json \
-    vendor/samsung/a52sxq/proprietary/vendor/etc/sensors/hals.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/hals.conf \
     vendor/samsung/a52sxq/proprietary/vendor/etc/sensors/proto/activities.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/activities.proto \
     vendor/samsung/a52sxq/proprietary/vendor/etc/sensors/proto/auto_brightness.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/auto_brightness.proto \
     vendor/samsung/a52sxq/proprietary/vendor/etc/sensors/proto/auto_rotation.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/auto_rotation.proto \
@@ -2255,7 +2252,6 @@ PRODUCT_PACKAGES += \
     android.hardware.dumpstate@1.1-service-lazy \
     android.hardware.gnss@2.1-service-qti \
     android.hardware.health@2.1-samsung \
-    android.hardware.sensors@2.0-multihal \
     android.hardware.wifi.hostapd \
     android.hardware.wifi@1.0-service \
     deviceManifest \
