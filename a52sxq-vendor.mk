@@ -215,7 +215,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/a52sxq/proprietary/vendor/bin/hw/android.hardware.dumpstate@1.1-service-lazy:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.dumpstate@1.1-service-lazy \
     vendor/samsung/a52sxq/proprietary/vendor/bin/hw/android.hardware.gnss@2.1-service-qti:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.gnss@2.1-service-qti \
     vendor/samsung/a52sxq/proprietary/vendor/bin/hw/android.hardware.identity-service-qti:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.identity-service-qti \
-    vendor/samsung/a52sxq/proprietary/vendor/bin/hw/android.hardware.media.omx@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.media.omx@1.0-service \
     vendor/samsung/a52sxq/proprietary/vendor/bin/hw/android.hardware.power.samsung-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.power.samsung-service \
     vendor/samsung/a52sxq/proprietary/vendor/bin/hw/android.hardware.wifi@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.wifi@1.0-service \
     vendor/samsung/a52sxq/proprietary/vendor/bin/hw/capabilityconfigstoretest:$(TARGET_COPY_OUT_VENDOR)/bin/hw/capabilityconfigstoretest \
@@ -345,7 +344,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/a52sxq/proprietary/vendor/etc/init/android.hardware.dumpstate@1.1-service-lazy.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.dumpstate@1.1-service-lazy.rc \
     vendor/samsung/a52sxq/proprietary/vendor/etc/init/android.hardware.gnss@2.1-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.gnss@2.1-service-qti.rc \
     vendor/samsung/a52sxq/proprietary/vendor/etc/init/android.hardware.identity-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.identity-service-qti.rc \
-    vendor/samsung/a52sxq/proprietary/vendor/etc/init/android.hardware.media.omx@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.media.omx@1.0-service.rc \
     vendor/samsung/a52sxq/proprietary/vendor/etc/init/android.hardware.wifi.supplicant-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.wifi.supplicant-service.rc \
     vendor/samsung/a52sxq/proprietary/vendor/etc/init/android.hardware.wifi@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.wifi@1.0-service.rc \
     vendor/samsung/a52sxq/proprietary/vendor/etc/init/camera.unihal.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/camera.unihal.rc \
@@ -419,31 +417,15 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/a52sxq/proprietary/vendor/etc/lowi.conf:$(TARGET_COPY_OUT_VENDOR)/etc/lowi.conf \
     vendor/samsung/a52sxq/proprietary/vendor/etc/media/video_system_specs.json:$(TARGET_COPY_OUT_VENDOR)/etc/media/video_system_specs.json \
     vendor/samsung/a52sxq/proprietary/vendor/etc/media_codecs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs.xml \
-    vendor/samsung/a52sxq/proprietary/vendor/etc/media_codecs_c2_sec.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_c2_sec.xml \
-    vendor/samsung/a52sxq/proprietary/vendor/etc/media_codecs_c2_sec_ape.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_c2_sec_ape.xml \
-    vendor/samsung/a52sxq/proprietary/vendor/etc/media_codecs_c2_sec_qcp.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_c2_sec_qcp.xml \
     vendor/samsung/a52sxq/proprietary/vendor/etc/media_codecs_dolby_audio.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_dolby_audio.xml \
-    vendor/samsung/a52sxq/proprietary/vendor/etc/media_codecs_google_audio.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_audio.xml \
-    vendor/samsung/a52sxq/proprietary/vendor/etc/media_codecs_google_c2.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_c2.xml \
-    vendor/samsung/a52sxq/proprietary/vendor/etc/media_codecs_google_c2_audio.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_c2_audio.xml \
-    vendor/samsung/a52sxq/proprietary/vendor/etc/media_codecs_google_c2_video.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_c2_video.xml \
-    vendor/samsung/a52sxq/proprietary/vendor/etc/media_codecs_google_telephony.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_telephony.xml \
-    vendor/samsung/a52sxq/proprietary/vendor/etc/media_codecs_google_video.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_video.xml \
-    vendor/samsung/a52sxq/proprietary/vendor/etc/media_codecs_google_video_le.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_video_le.xml \
     vendor/samsung/a52sxq/proprietary/vendor/etc/media_codecs_lahaina.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_lahaina.xml \
     vendor/samsung/a52sxq/proprietary/vendor/etc/media_codecs_lahaina_vendor.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_lahaina_vendor.xml \
     vendor/samsung/a52sxq/proprietary/vendor/etc/media_codecs_performance.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_performance.xml \
     vendor/samsung/a52sxq/proprietary/vendor/etc/media_codecs_performance_lahaina.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_performance_lahaina.xml \
     vendor/samsung/a52sxq/proprietary/vendor/etc/media_codecs_performance_lahaina_vendor.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_performance_lahaina_vendor.xml \
-    vendor/samsung/a52sxq/proprietary/vendor/etc/media_codecs_performance_shima_v1.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_performance_shima_v1.xml \
-    vendor/samsung/a52sxq/proprietary/vendor/etc/media_codecs_performance_shima_v2.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_performance_shima_v2.xml \
-    vendor/samsung/a52sxq/proprietary/vendor/etc/media_codecs_performance_shima_v3.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_performance_shima_v3.xml \
     vendor/samsung/a52sxq/proprietary/vendor/etc/media_codecs_performance_yupik_iot.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_performance_yupik_iot.xml \
     vendor/samsung/a52sxq/proprietary/vendor/etc/media_codecs_performance_yupik_v0.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_performance_yupik_v0.xml \
     vendor/samsung/a52sxq/proprietary/vendor/etc/media_codecs_performance_yupik_v1.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_performance_yupik_v1.xml \
-    vendor/samsung/a52sxq/proprietary/vendor/etc/media_codecs_shima_v1.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_shima_v1.xml \
-    vendor/samsung/a52sxq/proprietary/vendor/etc/media_codecs_shima_v2.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_shima_v2.xml \
-    vendor/samsung/a52sxq/proprietary/vendor/etc/media_codecs_shima_v3.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_shima_v3.xml \
     vendor/samsung/a52sxq/proprietary/vendor/etc/media_codecs_vendor_audio.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_vendor_audio.xml \
     vendor/samsung/a52sxq/proprietary/vendor/etc/media_codecs_wfd.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_wfd.xml \
     vendor/samsung/a52sxq/proprietary/vendor/etc/media_codecs_yupik_iot.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_yupik_iot.xml \
@@ -454,16 +436,10 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/a52sxq/proprietary/vendor/etc/media_profiles_V1_0.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles_V1_0.xml \
     vendor/samsung/a52sxq/proprietary/vendor/etc/media_profiles_lahaina.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles_lahaina.xml \
     vendor/samsung/a52sxq/proprietary/vendor/etc/media_profiles_lahaina_vendor.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles_lahaina_vendor.xml \
-    vendor/samsung/a52sxq/proprietary/vendor/etc/media_profiles_shima_v1.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles_shima_v1.xml \
-    vendor/samsung/a52sxq/proprietary/vendor/etc/media_profiles_shima_v2.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles_shima_v2.xml \
-    vendor/samsung/a52sxq/proprietary/vendor/etc/media_profiles_shima_v3.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles_shima_v3.xml \
     vendor/samsung/a52sxq/proprietary/vendor/etc/media_profiles_vendor.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles_vendor.xml \
     vendor/samsung/a52sxq/proprietary/vendor/etc/media_profiles_yupik_iot.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles_yupik_iot.xml \
     vendor/samsung/a52sxq/proprietary/vendor/etc/media_profiles_yupik_v0.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles_yupik_v0.xml \
     vendor/samsung/a52sxq/proprietary/vendor/etc/media_profiles_yupik_v1.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles_yupik_v1.xml \
-    vendor/samsung/a52sxq/proprietary/vendor/etc/media_shima_v1/video_system_specs.json:$(TARGET_COPY_OUT_VENDOR)/etc/media_shima_v1/video_system_specs.json \
-    vendor/samsung/a52sxq/proprietary/vendor/etc/media_shima_v2/video_system_specs.json:$(TARGET_COPY_OUT_VENDOR)/etc/media_shima_v2/video_system_specs.json \
-    vendor/samsung/a52sxq/proprietary/vendor/etc/media_shima_v3/video_system_specs.json:$(TARGET_COPY_OUT_VENDOR)/etc/media_shima_v3/video_system_specs.json \
     vendor/samsung/a52sxq/proprietary/vendor/etc/media_yupik_iot/video_system_specs.json:$(TARGET_COPY_OUT_VENDOR)/etc/media_yupik_iot/video_system_specs.json \
     vendor/samsung/a52sxq/proprietary/vendor/etc/media_yupik_v0/video_system_specs.json:$(TARGET_COPY_OUT_VENDOR)/etc/media_yupik_v0/video_system_specs.json \
     vendor/samsung/a52sxq/proprietary/vendor/etc/media_yupik_v1/video_system_specs.json:$(TARGET_COPY_OUT_VENDOR)/etc/media_yupik_v1/video_system_specs.json \
@@ -956,24 +932,18 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/a52sxq/proprietary/vendor/lib/libMpeghSwEnc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libMpeghSwEnc.so \
     vendor/samsung/a52sxq/proprietary/vendor/lib/libMultiROIDetector.camera.samsung.so:$(TARGET_COPY_OUT_VENDOR)/lib/libMultiROIDetector.camera.samsung.so \
     vendor/samsung/a52sxq/proprietary/vendor/lib/libOmxAacDec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libOmxAacDec.so \
-    vendor/samsung/a52sxq/proprietary/vendor/lib/libOmxAacEnc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libOmxAacEnc.so \
     vendor/samsung/a52sxq/proprietary/vendor/lib/libOmxAlacDec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libOmxAlacDec.so \
     vendor/samsung/a52sxq/proprietary/vendor/lib/libOmxAlacDecSw.so:$(TARGET_COPY_OUT_VENDOR)/lib/libOmxAlacDecSw.so \
     vendor/samsung/a52sxq/proprietary/vendor/lib/libOmxAmrDec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libOmxAmrDec.so \
-    vendor/samsung/a52sxq/proprietary/vendor/lib/libOmxAmrEnc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libOmxAmrEnc.so \
     vendor/samsung/a52sxq/proprietary/vendor/lib/libOmxAmrwbplusDec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libOmxAmrwbplusDec.so \
     vendor/samsung/a52sxq/proprietary/vendor/lib/libOmxApeDec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libOmxApeDec.so \
     vendor/samsung/a52sxq/proprietary/vendor/lib/libOmxApeDecSw.so:$(TARGET_COPY_OUT_VENDOR)/lib/libOmxApeDecSw.so \
-    vendor/samsung/a52sxq/proprietary/vendor/lib/libOmxCore.so:$(TARGET_COPY_OUT_VENDOR)/lib/libOmxCore.so \
     vendor/samsung/a52sxq/proprietary/vendor/lib/libOmxDsdDec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libOmxDsdDec.so \
     vendor/samsung/a52sxq/proprietary/vendor/lib/libOmxEvrcDec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libOmxEvrcDec.so \
-    vendor/samsung/a52sxq/proprietary/vendor/lib/libOmxEvrcEnc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libOmxEvrcEnc.so \
     vendor/samsung/a52sxq/proprietary/vendor/lib/libOmxG711Dec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libOmxG711Dec.so \
-    vendor/samsung/a52sxq/proprietary/vendor/lib/libOmxG711Enc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libOmxG711Enc.so \
     vendor/samsung/a52sxq/proprietary/vendor/lib/libOmxMpeghDecSw.so:$(TARGET_COPY_OUT_VENDOR)/lib/libOmxMpeghDecSw.so \
     vendor/samsung/a52sxq/proprietary/vendor/lib/libOmxMpeghEncSw.so:$(TARGET_COPY_OUT_VENDOR)/lib/libOmxMpeghEncSw.so \
     vendor/samsung/a52sxq/proprietary/vendor/lib/libOmxQcelp13Dec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libOmxQcelp13Dec.so \
-    vendor/samsung/a52sxq/proprietary/vendor/lib/libOmxQcelp13Enc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libOmxQcelp13Enc.so \
     vendor/samsung/a52sxq/proprietary/vendor/lib/libOmxWmaDec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libOmxWmaDec.so \
     vendor/samsung/a52sxq/proprietary/vendor/lib/libOpenCL.so:$(TARGET_COPY_OUT_VENDOR)/lib/libOpenCL.so \
     vendor/samsung/a52sxq/proprietary/vendor/lib/libOpenCv.camera.samsung.so:$(TARGET_COPY_OUT_VENDOR)/lib/libOpenCv.camera.samsung.so \
@@ -1321,7 +1291,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/a52sxq/proprietary/vendor/lib/libstagefright_omx_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libstagefright_omx_vendor.so \
     vendor/samsung/a52sxq/proprietary/vendor/lib/libstagefright_soft_qtiflacdec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libstagefright_soft_qtiflacdec.so \
     vendor/samsung/a52sxq/proprietary/vendor/lib/libstagefright_softomx_plugin.so:$(TARGET_COPY_OUT_VENDOR)/lib/libstagefright_softomx_plugin.so \
-    vendor/samsung/a52sxq/proprietary/vendor/lib/libstagefrighthw.so:$(TARGET_COPY_OUT_VENDOR)/lib/libstagefrighthw.so \
     vendor/samsung/a52sxq/proprietary/vendor/lib/libstork_shared.so:$(TARGET_COPY_OUT_VENDOR)/lib/libstork_shared.so \
     vendor/samsung/a52sxq/proprietary/vendor/lib/libstreamparser.so:$(TARGET_COPY_OUT_VENDOR)/lib/libstreamparser.so \
     vendor/samsung/a52sxq/proprietary/vendor/lib/libsubsystem_control.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsubsystem_control.so \
@@ -1681,22 +1650,16 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/a52sxq/proprietary/vendor/lib64/libMultiROIDetector.camera.samsung.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libMultiROIDetector.camera.samsung.so \
     vendor/samsung/a52sxq/proprietary/vendor/lib64/libNfcProperties.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libNfcProperties.so \
     vendor/samsung/a52sxq/proprietary/vendor/lib64/libOmxAacDec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libOmxAacDec.so \
-    vendor/samsung/a52sxq/proprietary/vendor/lib64/libOmxAacEnc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libOmxAacEnc.so \
     vendor/samsung/a52sxq/proprietary/vendor/lib64/libOmxAlacDec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libOmxAlacDec.so \
     vendor/samsung/a52sxq/proprietary/vendor/lib64/libOmxAlacDecSw.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libOmxAlacDecSw.so \
     vendor/samsung/a52sxq/proprietary/vendor/lib64/libOmxAmrDec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libOmxAmrDec.so \
-    vendor/samsung/a52sxq/proprietary/vendor/lib64/libOmxAmrEnc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libOmxAmrEnc.so \
     vendor/samsung/a52sxq/proprietary/vendor/lib64/libOmxAmrwbplusDec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libOmxAmrwbplusDec.so \
     vendor/samsung/a52sxq/proprietary/vendor/lib64/libOmxApeDec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libOmxApeDec.so \
     vendor/samsung/a52sxq/proprietary/vendor/lib64/libOmxApeDecSw.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libOmxApeDecSw.so \
-    vendor/samsung/a52sxq/proprietary/vendor/lib64/libOmxCore.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libOmxCore.so \
     vendor/samsung/a52sxq/proprietary/vendor/lib64/libOmxEvrcDec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libOmxEvrcDec.so \
-    vendor/samsung/a52sxq/proprietary/vendor/lib64/libOmxEvrcEnc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libOmxEvrcEnc.so \
     vendor/samsung/a52sxq/proprietary/vendor/lib64/libOmxG711Dec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libOmxG711Dec.so \
-    vendor/samsung/a52sxq/proprietary/vendor/lib64/libOmxG711Enc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libOmxG711Enc.so \
     vendor/samsung/a52sxq/proprietary/vendor/lib64/libOmxMpeghEncSw.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libOmxMpeghEncSw.so \
     vendor/samsung/a52sxq/proprietary/vendor/lib64/libOmxQcelp13Dec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libOmxQcelp13Dec.so \
-    vendor/samsung/a52sxq/proprietary/vendor/lib64/libOmxQcelp13Enc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libOmxQcelp13Enc.so \
     vendor/samsung/a52sxq/proprietary/vendor/lib64/libOmxWmaDec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libOmxWmaDec.so \
     vendor/samsung/a52sxq/proprietary/vendor/lib64/libOpenCL.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libOpenCL.so \
     vendor/samsung/a52sxq/proprietary/vendor/lib64/libOpenCv.camera.samsung.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libOpenCv.camera.samsung.so \
@@ -2069,7 +2032,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/a52sxq/proprietary/vendor/lib64/libssd.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libssd.so \
     vendor/samsung/a52sxq/proprietary/vendor/lib64/libssengine.uniplugin@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libssengine.uniplugin@1.0.so \
     vendor/samsung/a52sxq/proprietary/vendor/lib64/libstagefright_soft_qtiflacdec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libstagefright_soft_qtiflacdec.so \
-    vendor/samsung/a52sxq/proprietary/vendor/lib64/libstagefrighthw.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libstagefrighthw.so \
     vendor/samsung/a52sxq/proprietary/vendor/lib64/libstork_shared.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libstork_shared.so \
     vendor/samsung/a52sxq/proprietary/vendor/lib64/libsubsystem_control.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsubsystem_control.so \
     vendor/samsung/a52sxq/proprietary/vendor/lib64/libsume_core.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsume_core.so \
@@ -2255,7 +2217,6 @@ PRODUCT_PACKAGES += \
     manifest_android.hardware.drm@1.3-service.widevine \
     power-samsung \
     sec.android.hardware.nfc@1.2-service \
-    sec_c2_manifest_default0 \
     vaultkeeper_manifest \
     vendor.qti.diag.hal.service \
     vendor.samsung.hardware.hqm@1.0-manifest \
