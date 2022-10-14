@@ -215,7 +215,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/a52sxq/proprietary/vendor/bin/hw/android.hardware.dumpstate@1.1-service-lazy:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.dumpstate@1.1-service-lazy \
     vendor/samsung/a52sxq/proprietary/vendor/bin/hw/android.hardware.gnss@2.1-service-qti:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.gnss@2.1-service-qti \
     vendor/samsung/a52sxq/proprietary/vendor/bin/hw/android.hardware.identity-service-qti:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.identity-service-qti \
-    vendor/samsung/a52sxq/proprietary/vendor/bin/hw/android.hardware.power.samsung-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.power.samsung-service \
     vendor/samsung/a52sxq/proprietary/vendor/bin/hw/android.hardware.wifi@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.wifi@1.0-service \
     vendor/samsung/a52sxq/proprietary/vendor/bin/hw/capabilityconfigstoretest:$(TARGET_COPY_OUT_VENDOR)/bin/hw/capabilityconfigstoretest \
     vendor/samsung/a52sxq/proprietary/vendor/bin/hw/hostapd:$(TARGET_COPY_OUT_VENDOR)/bin/hw/hostapd \
@@ -234,7 +233,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/a52sxq/proprietary/vendor/bin/hw/vendor.samsung.hardware.biometrics.fingerprint@3.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.samsung.hardware.biometrics.fingerprint@3.0-service \
     vendor/samsung/a52sxq/proprietary/vendor/bin/hw/vendor.samsung.hardware.camera.provider@4.0-service_64:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.samsung.hardware.camera.provider@4.0-service_64 \
     vendor/samsung/a52sxq/proprietary/vendor/bin/hw/vendor.samsung.hardware.hqm@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.samsung.hardware.hqm@1.0-service \
-    vendor/samsung/a52sxq/proprietary/vendor/bin/hw/vendor.samsung.hardware.hyper-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.samsung.hardware.hyper-service \
     vendor/samsung/a52sxq/proprietary/vendor/bin/hw/vendor.samsung.hardware.snap@1.2-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.samsung.hardware.snap@1.2-service \
     vendor/samsung/a52sxq/proprietary/vendor/bin/hw/vendor.samsung.hardware.thermal@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.samsung.hardware.thermal@1.0-service \
     vendor/samsung/a52sxq/proprietary/vendor/bin/hw/vendor.samsung.hardware.wifi@2.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.samsung.hardware.wifi@2.0-service \
@@ -333,9 +331,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/a52sxq/proprietary/vendor/etc/gps.conf:$(TARGET_COPY_OUT_VENDOR)/etc/gps.conf \
     vendor/samsung/a52sxq/proprietary/vendor/etc/hearing_aid_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/hearing_aid_audio_policy_configuration.xml \
     vendor/samsung/a52sxq/proprietary/vendor/etc/hqm_device.xml:$(TARGET_COPY_OUT_VENDOR)/etc/hqm_device.xml \
-    vendor/samsung/a52sxq/proprietary/vendor/etc/hyper/config_chipset.json:$(TARGET_COPY_OUT_VENDOR)/etc/hyper/config_chipset.json \
-    vendor/samsung/a52sxq/proprietary/vendor/etc/hyper/config_hyper_permission.json:$(TARGET_COPY_OUT_VENDOR)/etc/hyper/config_hyper_permission.json \
-    vendor/samsung/a52sxq/proprietary/vendor/etc/hyper/config_vendor.json:$(TARGET_COPY_OUT_VENDOR)/etc/hyper/config_vendor.json \
     vendor/samsung/a52sxq/proprietary/vendor/etc/init/android.hardware.atrace@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.atrace@1.0-service.rc \
     vendor/samsung/a52sxq/proprietary/vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.bluetooth@1.0-service-qti.rc \
     vendor/samsung/a52sxq/proprietary/vendor/etc/init/android.hardware.cas@1.2-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.cas@1.2-service.rc \
@@ -350,7 +345,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/a52sxq/proprietary/vendor/etc/init/dataadpl.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/dataadpl.rc \
     vendor/samsung/a52sxq/proprietary/vendor/etc/init/fingerprint_common.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/fingerprint_common.rc \
     vendor/samsung/a52sxq/proprietary/vendor/etc/init/hostapd.android.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hostapd.android.rc \
-    vendor/samsung/a52sxq/proprietary/vendor/etc/init/hyper-default-sec.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hyper-default-sec.rc \
     vendor/samsung/a52sxq/proprietary/vendor/etc/init/init.audio.samsung.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.audio.samsung.rc \
     vendor/samsung/a52sxq/proprietary/vendor/etc/init/init.fingerprint.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.fingerprint.rc \
     vendor/samsung/a52sxq/proprietary/vendor/etc/init/init.nfc.samsung.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.nfc.samsung.rc \
@@ -373,7 +367,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/a52sxq/proprietary/vendor/etc/init/ipacm.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/ipacm.rc \
     vendor/samsung/a52sxq/proprietary/vendor/etc/init/netmgrd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/netmgrd.rc \
     vendor/samsung/a52sxq/proprietary/vendor/etc/init/pa_daemon_qsee.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/pa_daemon_qsee.rc \
-    vendor/samsung/a52sxq/proprietary/vendor/etc/init/power-default-sec.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/power-default-sec.rc \
     vendor/samsung/a52sxq/proprietary/vendor/etc/init/qseecomd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/qseecomd.rc \
     vendor/samsung/a52sxq/proprietary/vendor/etc/init/sec.android.hardware.nfc@1.2-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/sec.android.hardware.nfc@1.2-service.rc \
     vendor/samsung/a52sxq/proprietary/vendor/etc/init/vendor.display.color@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.display.color@1.0-service.rc \
@@ -451,24 +444,18 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/a52sxq/proprietary/vendor/etc/mixer_paths_qrd.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_paths_qrd.xml \
     vendor/samsung/a52sxq/proprietary/vendor/etc/mixer_usb_default.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_usb_default.xml \
     vendor/samsung/a52sxq/proprietary/vendor/etc/mkshrc:$(TARGET_COPY_OUT_VENDOR)/etc/mkshrc \
-    vendor/samsung/a52sxq/proprietary/vendor/etc/msm_irqbalance.conf:$(TARGET_COPY_OUT_VENDOR)/etc/msm_irqbalance.conf \
     vendor/samsung/a52sxq/proprietary/vendor/etc/mtu-conf.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mtu-conf.xml \
     vendor/samsung/a52sxq/proprietary/vendor/etc/nfc/sec_s3nrn4v_hwreg.bin:$(TARGET_COPY_OUT_VENDOR)/etc/nfc/sec_s3nrn4v_hwreg.bin \
     vendor/samsung/a52sxq/proprietary/vendor/etc/nfc/sec_s3nrn4v_swreg.bin:$(TARGET_COPY_OUT_VENDOR)/etc/nfc/sec_s3nrn4v_swreg.bin \
     vendor/samsung/a52sxq/proprietary/vendor/etc/pdpcnt-conf.xml:$(TARGET_COPY_OUT_VENDOR)/etc/pdpcnt-conf.xml \
     vendor/samsung/a52sxq/proprietary/vendor/etc/perf/commonresourceconfigs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/perf/commonresourceconfigs.xml \
     vendor/samsung/a52sxq/proprietary/vendor/etc/perf/commonsysnodesconfigs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/perf/commonsysnodesconfigs.xml \
-    vendor/samsung/a52sxq/proprietary/vendor/etc/perf/perfboostsconfig.xml:$(TARGET_COPY_OUT_VENDOR)/etc/perf/perfboostsconfig.xml \
-    vendor/samsung/a52sxq/proprietary/vendor/etc/perf/perfconfigstore.xml:$(TARGET_COPY_OUT_VENDOR)/etc/perf/perfconfigstore.xml \
-    vendor/samsung/a52sxq/proprietary/vendor/etc/perf/targetconfig.xml:$(TARGET_COPY_OUT_VENDOR)/etc/perf/targetconfig.xml \
-    vendor/samsung/a52sxq/proprietary/vendor/etc/perf/targetresourceconfigs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/perf/targetresourceconfigs.xml \
     vendor/samsung/a52sxq/proprietary/vendor/etc/playback_record_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/playback_record_audio_policy_configuration.xml \
     vendor/samsung/a52sxq/proprietary/vendor/etc/plmn_delta.bin:$(TARGET_COPY_OUT_VENDOR)/etc/plmn_delta.bin \
     vendor/samsung/a52sxq/proprietary/vendor/etc/plmn_delta_attaio.bin:$(TARGET_COPY_OUT_VENDOR)/etc/plmn_delta_attaio.bin \
     vendor/samsung/a52sxq/proprietary/vendor/etc/plmn_delta_hktw.bin:$(TARGET_COPY_OUT_VENDOR)/etc/plmn_delta_hktw.bin \
     vendor/samsung/a52sxq/proprietary/vendor/etc/plmn_delta_usagsm.bin:$(TARGET_COPY_OUT_VENDOR)/etc/plmn_delta_usagsm.bin \
     vendor/samsung/a52sxq/proprietary/vendor/etc/plmn_se13.bin:$(TARGET_COPY_OUT_VENDOR)/etc/plmn_se13.bin \
-    vendor/samsung/a52sxq/proprietary/vendor/etc/powerhint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.xml \
     vendor/samsung/a52sxq/proprietary/vendor/etc/public.libraries.txt:$(TARGET_COPY_OUT_VENDOR)/etc/public.libraries.txt \
     vendor/samsung/a52sxq/proprietary/vendor/etc/public.libraries.txt.backup:$(TARGET_COPY_OUT_VENDOR)/etc/public.libraries.txt.backup \
     vendor/samsung/a52sxq/proprietary/vendor/etc/qdcm_calib_data_nt36672e_60_Hz_fhd_plus_video_mode_panel_without_DSC.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_nt36672e_60_Hz_fhd_plus_video_mode_panel_without_DSC.xml \
@@ -889,7 +876,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/a52sxq/proprietary/vendor/lib/hw/com.qti.chi.override.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/com.qti.chi.override.so \
     vendor/samsung/a52sxq/proprietary/vendor/lib/hw/fingerprint.default.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/fingerprint.default.so \
     vendor/samsung/a52sxq/proprietary/vendor/lib/hw/local_time.default.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/local_time.default.so \
-    vendor/samsung/a52sxq/proprietary/vendor/lib/hw/power.default.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/power.default.so \
     vendor/samsung/a52sxq/proprietary/vendor/lib/hw/sound_trigger.primary.lahaina.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/sound_trigger.primary.lahaina.so \
     vendor/samsung/a52sxq/proprietary/vendor/lib/hw/vendor.qti.hardware.capabilityconfigstore@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.qti.hardware.capabilityconfigstore@1.0-impl.so \
     vendor/samsung/a52sxq/proprietary/vendor/lib/hw/vendor.qti.hardware.qccvndhal@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.qti.hardware.qccvndhal@1.0-impl.so \
@@ -1095,7 +1081,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/a52sxq/proprietary/vendor/lib/libhqm_hwparam.so:$(TARGET_COPY_OUT_VENDOR)/lib/libhqm_hwparam.so \
     vendor/samsung/a52sxq/proprietary/vendor/lib/libhypermotion_core.so:$(TARGET_COPY_OUT_VENDOR)/lib/libhypermotion_core.so \
     vendor/samsung/a52sxq/proprietary/vendor/lib/libhypermotion_interface.so:$(TARGET_COPY_OUT_VENDOR)/lib/libhypermotion_interface.so \
-    vendor/samsung/a52sxq/proprietary/vendor/lib/libhypervintf.so:$(TARGET_COPY_OUT_VENDOR)/lib/libhypervintf.so \
     vendor/samsung/a52sxq/proprietary/vendor/lib/libidl.so:$(TARGET_COPY_OUT_VENDOR)/lib/libidl.so \
     vendor/samsung/a52sxq/proprietary/vendor/lib/libimage_enhancement.arcsoft.so:$(TARGET_COPY_OUT_VENDOR)/lib/libimage_enhancement.arcsoft.so \
     vendor/samsung/a52sxq/proprietary/vendor/lib/libimagecodec_native.quram.so:$(TARGET_COPY_OUT_VENDOR)/lib/libimagecodec_native.quram.so \
@@ -1449,7 +1434,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/a52sxq/proprietary/vendor/lib/vendor.samsung.hardware.camera.provider@4.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.samsung.hardware.camera.provider@4.0.so \
     vendor/samsung/a52sxq/proprietary/vendor/lib/vendor.samsung.hardware.gnss@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.samsung.hardware.gnss@2.0.so \
     vendor/samsung/a52sxq/proprietary/vendor/lib/vendor.samsung.hardware.hqm@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.samsung.hardware.hqm@1.0.so \
-    vendor/samsung/a52sxq/proprietary/vendor/lib/vendor.samsung.hardware.hyper-V2-ndk_platform.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.samsung.hardware.hyper-V2-ndk_platform.so \
     vendor/samsung/a52sxq/proprietary/vendor/lib/vendor.samsung.hardware.snap@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.samsung.hardware.snap@1.0.so \
     vendor/samsung/a52sxq/proprietary/vendor/lib/vendor.samsung.hardware.snap@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.samsung.hardware.snap@1.1.so \
     vendor/samsung/a52sxq/proprietary/vendor/lib/vendor.samsung.hardware.snap@1.2.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.samsung.hardware.snap@1.2.so \
@@ -1604,7 +1588,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/a52sxq/proprietary/vendor/lib64/hw/fingerprint.default.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/fingerprint.default.so \
     vendor/samsung/a52sxq/proprietary/vendor/lib64/hw/gatekeeper.mdfpp.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/gatekeeper.mdfpp.so \
     vendor/samsung/a52sxq/proprietary/vendor/lib64/hw/local_time.default.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/local_time.default.so \
-    vendor/samsung/a52sxq/proprietary/vendor/lib64/hw/power.default.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/power.default.so \
     vendor/samsung/a52sxq/proprietary/vendor/lib64/hw/sound_trigger.primary.lahaina.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/sound_trigger.primary.lahaina.so \
     vendor/samsung/a52sxq/proprietary/vendor/lib64/hw/vendor.qti.hardware.capabilityconfigstore@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.qti.hardware.capabilityconfigstore@1.0-impl.so \
     vendor/samsung/a52sxq/proprietary/vendor/lib64/hw/vendor.qti.hardware.qccvndhal@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.qti.hardware.qccvndhal@1.0-impl.so \
@@ -1811,7 +1794,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/a52sxq/proprietary/vendor/lib64/libhyper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhyper.so \
     vendor/samsung/a52sxq/proprietary/vendor/lib64/libhypermotion_core.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhypermotion_core.so \
     vendor/samsung/a52sxq/proprietary/vendor/lib64/libhypermotion_interface.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhypermotion_interface.so \
-    vendor/samsung/a52sxq/proprietary/vendor/lib64/libhypervintf.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhypervintf.so \
     vendor/samsung/a52sxq/proprietary/vendor/lib64/libidl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libidl.so \
     vendor/samsung/a52sxq/proprietary/vendor/lib64/libimage_enhancement.arcsoft.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libimage_enhancement.arcsoft.so \
     vendor/samsung/a52sxq/proprietary/vendor/lib64/libimagecodec_native.quram.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libimagecodec_native.quram.so \
@@ -2174,7 +2156,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/a52sxq/proprietary/vendor/lib64/vendor.samsung.hardware.camera.provider@4.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.samsung.hardware.camera.provider@4.0.so \
     vendor/samsung/a52sxq/proprietary/vendor/lib64/vendor.samsung.hardware.gnss@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.samsung.hardware.gnss@2.0.so \
     vendor/samsung/a52sxq/proprietary/vendor/lib64/vendor.samsung.hardware.hqm@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.samsung.hardware.hqm@1.0.so \
-    vendor/samsung/a52sxq/proprietary/vendor/lib64/vendor.samsung.hardware.hyper-V2-ndk_platform.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.samsung.hardware.hyper-V2-ndk_platform.so \
     vendor/samsung/a52sxq/proprietary/vendor/lib64/vendor.samsung.hardware.media.mpp-V1-ndk_platform.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.samsung.hardware.media.mpp-V1-ndk_platform.so \
     vendor/samsung/a52sxq/proprietary/vendor/lib64/vendor.samsung.hardware.nfc@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.samsung.hardware.nfc@2.0.so \
     vendor/samsung/a52sxq/proprietary/vendor/lib64/vendor.samsung.hardware.radio.bridge@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.samsung.hardware.radio.bridge@2.0.so \
@@ -2210,10 +2191,8 @@ PRODUCT_PACKAGES += \
     android.hardware.wifi.hostapd \
     android.hardware.wifi@1.0-service \
     deviceManifest \
-    hyper-default-sec \
     manifest \
     manifest_android.hardware.drm@1.3-service.widevine \
-    power-samsung \
     sec.android.hardware.nfc@1.2-service \
     vaultkeeper_manifest \
     vendor.qti.diag.hal.service \
