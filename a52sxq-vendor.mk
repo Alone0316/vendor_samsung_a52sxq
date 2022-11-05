@@ -216,7 +216,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/a52sxq/proprietary/vendor/bin/hw/vendor.qti.hardware.tui_comm@1.0-service-qti:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.tui_comm@1.0-service-qti \
     vendor/samsung/a52sxq/proprietary/vendor/bin/hw/vendor.qti.media.c2@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.media.c2@1.0-service \
     vendor/samsung/a52sxq/proprietary/vendor/bin/hw/vendor.samsung.hardware.biometrics.face@2.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.samsung.hardware.biometrics.face@2.0-service \
-    vendor/samsung/a52sxq/proprietary/vendor/bin/hw/vendor.samsung.hardware.biometrics.fingerprint@3.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.samsung.hardware.biometrics.fingerprint@3.0-service \
     vendor/samsung/a52sxq/proprietary/vendor/bin/hw/vendor.samsung.hardware.camera.provider@4.0-service_64:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.samsung.hardware.camera.provider@4.0-service_64 \
     vendor/samsung/a52sxq/proprietary/vendor/bin/hw/vendor.samsung.hardware.hqm@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.samsung.hardware.hqm@1.0-service \
     vendor/samsung/a52sxq/proprietary/vendor/bin/i2cdetect:$(TARGET_COPY_OUT_VENDOR)/bin/i2cdetect \
@@ -357,7 +356,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/a52sxq/proprietary/vendor/etc/init/vendor.qti.rmt_storage.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.rmt_storage.rc \
     vendor/samsung/a52sxq/proprietary/vendor/etc/init/vendor.qti.tftp.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.tftp.rc \
     vendor/samsung/a52sxq/proprietary/vendor/etc/init/vendor.samsung.hardware.biometrics.face@2.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.samsung.hardware.biometrics.face@2.0-service.rc \
-    vendor/samsung/a52sxq/proprietary/vendor/etc/init/vendor.samsung.hardware.biometrics.fingerprint@3.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.samsung.hardware.biometrics.fingerprint@3.0-service.rc \
     vendor/samsung/a52sxq/proprietary/vendor/etc/init/vendor.samsung.hardware.camera.provider@4.0-service_64.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.samsung.hardware.camera.provider@4.0-service_64.rc \
     vendor/samsung/a52sxq/proprietary/vendor/etc/init/vendor.samsung.hardware.hqm@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.samsung.hardware.hqm@1.0-service.rc \
     vendor/samsung/a52sxq/proprietary/vendor/etc/init/vendor.sensors.sscrpcd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.sensors.sscrpcd.rc \
@@ -838,7 +836,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/a52sxq/proprietary/vendor/lib/hw/camera.qcom.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/camera.qcom.so \
     vendor/samsung/a52sxq/proprietary/vendor/lib/hw/camera.unihal.default.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/camera.unihal.default.so \
     vendor/samsung/a52sxq/proprietary/vendor/lib/hw/com.qti.chi.override.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/com.qti.chi.override.so \
-    vendor/samsung/a52sxq/proprietary/vendor/lib/hw/fingerprint.default.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/fingerprint.default.so \
     vendor/samsung/a52sxq/proprietary/vendor/lib/hw/local_time.default.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/local_time.default.so \
     vendor/samsung/a52sxq/proprietary/vendor/lib/hw/sound_trigger.primary.lahaina.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/sound_trigger.primary.lahaina.so \
     vendor/samsung/a52sxq/proprietary/vendor/lib/hw/vendor.qti.hardware.capabilityconfigstore@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.qti.hardware.capabilityconfigstore@1.0-impl.so \
@@ -1524,7 +1521,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/a52sxq/proprietary/vendor/lib64/hw/camera.qcom.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/camera.qcom.so \
     vendor/samsung/a52sxq/proprietary/vendor/lib64/hw/camera.unihal.default.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/camera.unihal.default.so \
     vendor/samsung/a52sxq/proprietary/vendor/lib64/hw/com.qti.chi.override.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/com.qti.chi.override.so \
-    vendor/samsung/a52sxq/proprietary/vendor/lib64/hw/fingerprint.default.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/fingerprint.default.so \
     vendor/samsung/a52sxq/proprietary/vendor/lib64/hw/gatekeeper.mdfpp.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/gatekeeper.mdfpp.so \
     vendor/samsung/a52sxq/proprietary/vendor/lib64/hw/local_time.default.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/local_time.default.so \
     vendor/samsung/a52sxq/proprietary/vendor/lib64/hw/sound_trigger.primary.lahaina.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/sound_trigger.primary.lahaina.so \
