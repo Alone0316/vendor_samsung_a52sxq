@@ -8,19 +8,6 @@ PRODUCT_SOONG_NAMESPACES += \
 
 PRODUCT_COPY_FILES += \
     vendor/samsung/a52sxq/proprietary/etc/libnfc-nci.conf:$(TARGET_COPY_OUT_SYSTEM)/etc/libnfc-nci.conf \
-    vendor/samsung/a52sxq/proprietary/lib/libQSEEComAPI_system.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libQSEEComAPI_system.so \
-    vendor/samsung/a52sxq/proprietary/lib/libdatasource.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libdatasource.so \
-    vendor/samsung/a52sxq/proprietary/lib/libdatasource_local_cache.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libdatasource_local_cache.so \
-    vendor/samsung/a52sxq/proprietary/lib/libdmabufheap.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libdmabufheap.so \
-    vendor/samsung/a52sxq/proprietary/lib/libhdcp2.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libhdcp2.so \
-    vendor/samsung/a52sxq/proprietary/lib/libomafldrm.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libomafldrm.so \
-    vendor/samsung/a52sxq/proprietary/lib/libsavscmn.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libsavscmn.so \
-    vendor/samsung/a52sxq/proprietary/lib64/libQSEEComAPI_system.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libQSEEComAPI_system.so \
-    vendor/samsung/a52sxq/proprietary/lib64/libdatasource.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libdatasource.so \
-    vendor/samsung/a52sxq/proprietary/lib64/libdatasource_local_cache.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libdatasource_local_cache.so \
-    vendor/samsung/a52sxq/proprietary/lib64/libdmabufheap.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libdmabufheap.so \
-    vendor/samsung/a52sxq/proprietary/lib64/libomafldrm.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libomafldrm.so \
-    vendor/samsung/a52sxq/proprietary/lib64/libsavscmn.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libsavscmn.so \
     vendor/samsung/a52sxq/proprietary/system_ext/lib/com.qualcomm.qti.bluetooth_audio@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/com.qualcomm.qti.bluetooth_audio@1.0.so \
     vendor/samsung/a52sxq/proprietary/system_ext/lib/com.qualcomm.qti.dpm.api@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/com.qualcomm.qti.dpm.api@1.0.so \
     vendor/samsung/a52sxq/proprietary/system_ext/lib/com.qualcomm.qti.imscmservice@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/com.qualcomm.qti.imscmservice@1.0.so \
